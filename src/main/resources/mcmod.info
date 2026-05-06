@@ -1,0 +1,13 @@
+[
+  {
+    "modid": "hbm",
+    "name": "HBM's Nuclear Tech Mod",
+    "description": "Nuclear technology mod with space.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "",
+    "url": "",
+    "authorList": [],
+    "dependencies": []
+  }
+]
