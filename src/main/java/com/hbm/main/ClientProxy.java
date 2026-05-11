@@ -1,5 +1,6 @@
 package com.hbm.main;
 
+import com.hbm.config.ClientConfig;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -13,6 +14,7 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void init(FMLInitializationEvent event) {
+        ClientConfig.initConfig();
         super.init(event);
     }
 

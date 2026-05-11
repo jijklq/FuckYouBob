@@ -37,11 +37,17 @@ minecraft {
 repositories {
     maven { url = 'https://maven.minecraftforge.net/' }
     maven { url = 'https://libraries.minecraft.net/' }
+    // ModMaven for JEI (keep for future use)
+    // maven { name = "ModMaven"; url = "https://modmaven.dev" }
     mavenCentral()
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2859'
+    // JEI soft dependency — API jar vendored locally (libs/jei_1.12.2-4.15.0.297-api.jar).
+    // API jar uses MCP names, so no fg.deobf() needed.
+    // For in-game testing: place JEI's full jar in run/mods/ manually.
+    compileOnly fileTree(dir: 'libs', include: 'jei_*.jar')
 }
 
 jar {
