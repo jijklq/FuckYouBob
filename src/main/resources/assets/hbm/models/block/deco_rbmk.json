@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/deco_rbmk"
+    "all": "hbm:blocks/rbmk/rbmk_top"
   }
 }

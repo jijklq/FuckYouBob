@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/cm_flux"
+    "all": "hbm:blocks/cm_flux_side"
   }
 }

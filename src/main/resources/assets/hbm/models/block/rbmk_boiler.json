@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/rbmk_boiler"
+    "all": "hbm:blocks/rbmk/rbmk_boiler_side"
   }
 }

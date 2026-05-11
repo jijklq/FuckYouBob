@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/machine_soldering_station"
+    "all": "hbm:blocks/block_steel"
   }
 }

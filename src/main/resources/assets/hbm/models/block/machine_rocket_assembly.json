@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/machine_rocket_assembly"
+    "all": "hbm:blocks/machine_missile_assembly"
   }
 }

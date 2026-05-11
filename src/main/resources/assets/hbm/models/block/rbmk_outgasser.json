@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/rbmk_outgasser"
+    "all": "hbm:blocks/rbmk/rbmk_outgasser_side"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/meteor_battery"
+    "all": "hbm:blocks/meteor_spawner_side"
   }
 }

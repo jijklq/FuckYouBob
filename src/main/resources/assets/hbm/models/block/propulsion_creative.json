@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/propulsion_creative"
+    "all": "hbm:blocks/block_steel"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/capacitor_copper"
+    "all": "hbm:blocks/block_copper"
   }
 }

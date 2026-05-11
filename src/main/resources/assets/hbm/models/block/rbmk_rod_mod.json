@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/rbmk_rod_mod"
+    "all": "hbm:blocks/rbmk/rbmk_element_mod_side"
   }
 }

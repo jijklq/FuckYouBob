@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/silo_hatch_large"
+    "all": "hbm:blocks/block_steel"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/plushie"
+    "all": "hbm:blocks/block_fiberglass_side"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/pribris_radiating"
+    "all": "hbm:blocks/rbmk/rbmk_debris_radiating"
   }
 }

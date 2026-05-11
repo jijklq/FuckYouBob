@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/foam_layer"
+    "all": "hbm:blocks/foam"
   }
 }

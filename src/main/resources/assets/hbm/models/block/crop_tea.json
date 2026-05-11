@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/crop_tea"
+    "all": "hbm:blocks/tea_4"
   }
 }

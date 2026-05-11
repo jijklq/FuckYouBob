@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/crate_ammo"
+    "all": "hbm:blocks/crate_ammo_side"
   }
 }

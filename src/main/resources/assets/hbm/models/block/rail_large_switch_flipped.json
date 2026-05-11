@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/rail_large_switch_flipped"
+    "all": "hbm:blocks/rail_standard_straight"
   }
 }

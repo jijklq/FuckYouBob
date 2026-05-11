@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/transporter_rocket"
+    "all": "hbm:blocks/block_steel"
   }
 }

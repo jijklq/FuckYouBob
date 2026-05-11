@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/deco_pipe_framed"
+    "all": "hbm:blocks/pipe_top"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/furnace_combination"
+    "all": "hbm:blocks/brick_light_alt"
   }
 }

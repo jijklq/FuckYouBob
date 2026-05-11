@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/taint_barrel"
+    "all": "hbm:blocks/barrel_taint"
   }
 }

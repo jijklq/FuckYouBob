@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/ore_sellafield_uranium_scorched"
+    "all": "hbm:blocks/ore_overlay_uranium_scorched"
   }
 }

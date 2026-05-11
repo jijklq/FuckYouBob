@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/foundry_basin"
+    "all": "hbm:blocks/brick_fire"
   }
 }

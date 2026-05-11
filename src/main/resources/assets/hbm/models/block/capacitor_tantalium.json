@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/capacitor_tantalium"
+    "all": "hbm:blocks/block_tantalium"
   }
 }

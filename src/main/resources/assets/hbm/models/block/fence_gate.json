@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/fence_gate"
+    "all": "hbm:blocks/fence_metal"
   }
 }

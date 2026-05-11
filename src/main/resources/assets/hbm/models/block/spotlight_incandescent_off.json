@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/spotlight_incandescent_off"
+    "all": "hbm:blocks/cage_lamp_off"
   }
 }

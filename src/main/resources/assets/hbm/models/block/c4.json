@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/c4"
+    "all": "hbm:blocks/c4_side"
   }
 }

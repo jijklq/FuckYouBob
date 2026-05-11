@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/carbonized_flesh_block"
+    "all": "hbm:blocks/carbonizedFlesh"
   }
 }

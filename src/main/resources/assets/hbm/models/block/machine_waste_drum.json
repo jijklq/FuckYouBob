@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/machine_waste_drum"
+    "all": "hbm:blocks/waste_drum"
   }
 }

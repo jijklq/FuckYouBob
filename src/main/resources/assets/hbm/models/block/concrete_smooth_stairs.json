@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/concrete_smooth_stairs"
+    "all": "hbm:blocks/concrete"
   }
 }

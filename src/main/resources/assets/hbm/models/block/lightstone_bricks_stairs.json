@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/lightstone_bricks_stairs"
+    "all": "hbm:blocks/lightstone.bricks"
   }
 }

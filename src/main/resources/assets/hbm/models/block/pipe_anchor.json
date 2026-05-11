@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/pipe_anchor"
+    "all": "hbm:blocks/block_steel"
   }
 }

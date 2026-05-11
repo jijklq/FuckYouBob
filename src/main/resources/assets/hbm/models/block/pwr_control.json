@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/pwr_control"
+    "all": "hbm:blocks/pwr_control_side"
   }
 }

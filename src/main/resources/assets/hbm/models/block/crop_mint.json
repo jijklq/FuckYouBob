@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/crop_mint"
+    "all": "hbm:blocks/mint_4"
   }
 }

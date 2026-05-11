@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/furnace"
+    "all": "minecraft:blocks/furnace_front_off"
   }
 }

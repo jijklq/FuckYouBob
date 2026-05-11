@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/concrete_pillar"
+    "all": "hbm:blocks/concrete_pillar_side"
   }
 }

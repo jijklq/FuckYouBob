@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/machine_condenser_powered"
+    "all": "hbm:blocks/block_steel_machine"
   }
 }

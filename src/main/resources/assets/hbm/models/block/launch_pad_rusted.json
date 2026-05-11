@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/launch_pad_rusted"
+    "all": "hbm:blocks/block_rust"
   }
 }

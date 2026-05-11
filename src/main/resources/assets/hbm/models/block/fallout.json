@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/fallout"
+    "all": "hbm:blocks/ash"
   }
 }

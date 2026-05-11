@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/skeleton_holder"
+    "all": "minecraft:blocks/soul_sand"
   }
 }

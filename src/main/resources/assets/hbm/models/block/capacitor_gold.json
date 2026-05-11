@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "hbm:blocks/capacitor_gold"
+    "all": "minecraft:blocks/gold_block"
   }
 }
