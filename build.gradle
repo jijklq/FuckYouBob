@@ -16,7 +16,10 @@ version = '1.0.0'
 group = 'com.hbm'
 archivesBaseName = 'ntm'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 minecraft {
     mappings channel: 'snapshot', version: '20171003-1.12'

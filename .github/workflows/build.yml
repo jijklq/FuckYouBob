@@ -25,8 +25,8 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: gradle-${{ hashFiles('**/*.gradle', 'gradle.properties') }}
-          restore-keys: gradle-
+          key: gradle-v2-${{ hashFiles('**/*.gradle', 'gradle.properties') }}
+          restore-keys: gradle-v2-
 
       - name: Cache ForgeGradle
         uses: actions/cache@v4
