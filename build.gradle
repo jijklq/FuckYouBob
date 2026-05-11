@@ -21,6 +21,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+
 minecraft {
     mappings channel: 'snapshot', version: '20171003-1.12'
 

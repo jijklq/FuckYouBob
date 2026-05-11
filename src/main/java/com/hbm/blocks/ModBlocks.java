@@ -2,6 +2,9 @@ package com.hbm.blocks;
 
 import com.hbm.main.MainRegistry;
 import net.minecraft.block.Block;
+import com.hbm.blocks.generic.BlockGas;
+import com.hbm.blocks.generic.BlockOre;
+import com.hbm.blocks.generic.BlockOreOutgas;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -3457,84 +3460,84 @@ public class ModBlocks {
         structure_anchor = new Block(Material.IRON).setUnlocalizedName("structure_anchor").setRegistryName("hbm", "structure_anchor").setHardness(2.5F).setResistance(10.0F);
 
         // Vanilla ores for other planets
-        ore_iron = new Block(Material.ROCK).setUnlocalizedName("ore_iron").setRegistryName("hbm", "ore_iron").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_gold = new Block(Material.ROCK).setUnlocalizedName("ore_gold").setRegistryName("hbm", "ore_gold").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_redstone = new Block(Material.ROCK).setUnlocalizedName("ore_redstone").setRegistryName("hbm", "ore_redstone").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_lapis = new Block(Material.ROCK).setUnlocalizedName("ore_lapis").setRegistryName("hbm", "ore_lapis").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_emerald = new Block(Material.ROCK).setUnlocalizedName("ore_emerald").setRegistryName("hbm", "ore_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_quartz = new Block(Material.ROCK).setUnlocalizedName("ore_quartz").setRegistryName("hbm", "ore_quartz").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        ore_diamond = new Block(Material.ROCK).setUnlocalizedName("ore_diamond").setRegistryName("hbm", "ore_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_iron = new BlockOre(Material.ROCK).setUnlocalizedName("ore_iron").setRegistryName("hbm", "ore_iron").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_gold = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gold").setRegistryName("hbm", "ore_gold").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_redstone = new BlockOre(Material.ROCK).setUnlocalizedName("ore_redstone").setRegistryName("hbm", "ore_redstone").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_lapis = new BlockOre(Material.ROCK).setUnlocalizedName("ore_lapis").setRegistryName("hbm", "ore_lapis").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_emerald = new BlockOre(Material.ROCK).setUnlocalizedName("ore_emerald").setRegistryName("hbm", "ore_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_quartz = new BlockOre(Material.ROCK).setUnlocalizedName("ore_quartz").setRegistryName("hbm", "ore_quartz").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        ore_diamond = new BlockOre(Material.ROCK).setUnlocalizedName("ore_diamond").setRegistryName("hbm", "ore_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
 
         // Ores
-        ore_uranium = new Block(Material.ROCK).setUnlocalizedName("ore_uranium").setRegistryName("hbm", "ore_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_uranium_scorched = new Block(Material.ROCK).setUnlocalizedName("ore_uranium_scorched").setRegistryName("hbm", "ore_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_plutonium = new Block(Material.ROCK).setUnlocalizedName("ore_plutonium").setRegistryName("hbm", "ore_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_titanium = new Block(Material.ROCK).setUnlocalizedName("ore_titanium").setRegistryName("hbm", "ore_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_sulfur = new Block(Material.ROCK).setUnlocalizedName("ore_sulfur").setRegistryName("hbm", "ore_sulfur").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_glowstone = new Block(Material.ROCK).setUnlocalizedName("ore_glowstone").setRegistryName("hbm", "ore_glowstone").setCreativeTab(MainRegistry.blockTab).setLightLevel(4F / 15F).setHardness(5.0F).setResistance(10.0F);
-        ore_thorium = new Block(Material.ROCK).setUnlocalizedName("ore_thorium").setRegistryName("hbm", "ore_thorium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_morkite = new Block(Material.ROCK).setUnlocalizedName("ore_morkite").setRegistryName("hbm", "ore_morkite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_niter = new Block(Material.ROCK).setUnlocalizedName("ore_niter").setRegistryName("hbm", "ore_niter").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_copper = new Block(Material.ROCK).setUnlocalizedName("ore_copper").setRegistryName("hbm", "ore_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_nickel = new Block(Material.ROCK).setUnlocalizedName("ore_nickel").setRegistryName("hbm", "ore_nickel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_tungsten = new Block(Material.ROCK).setUnlocalizedName("ore_tungsten").setRegistryName("hbm", "ore_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_aluminium = new Block(Material.ROCK).setUnlocalizedName("ore_aluminium").setRegistryName("hbm", "ore_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_fluorite = new Block(Material.ROCK).setUnlocalizedName("ore_fluorite").setRegistryName("hbm", "ore_fluorite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_lead = new Block(Material.ROCK).setUnlocalizedName("ore_lead").setRegistryName("hbm", "ore_lead").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_schrabidium = new Block(Material.ROCK).setUnlocalizedName("ore_schrabidium").setRegistryName("hbm", "ore_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
-        ore_beryllium = new Block(Material.ROCK).setUnlocalizedName("ore_beryllium").setRegistryName("hbm", "ore_beryllium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        ore_lignite = new Block(Material.ROCK).setUnlocalizedName("ore_lignite").setRegistryName("hbm", "ore_lignite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        ore_asbestos = new Block(Material.ROCK).setUnlocalizedName("ore_asbestos").setRegistryName("hbm", "ore_asbestos").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        ore_mineral = new Block(Material.ROCK).setUnlocalizedName("ore_mineral").setRegistryName("hbm", "ore_mineral").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_zinc = new Block(Material.ROCK).setUnlocalizedName("ore_zinc").setRegistryName("hbm", "ore_zinc").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_lithium = new Block(Material.ROCK).setUnlocalizedName("ore_lithium").setRegistryName("hbm", "ore_lithium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_niobium = new Block(Material.ROCK).setUnlocalizedName("ore_niobium").setRegistryName("hbm", "ore_niobium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_cadmium = new Block(Material.ROCK).setUnlocalizedName("ore_cadmium").setRegistryName("hbm", "ore_cadmium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_palladium = new Block(Material.ROCK).setUnlocalizedName("ore_palladium").setRegistryName("hbm", "ore_palladium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_iodine = new Block(Material.ROCK).setUnlocalizedName("ore_iodine").setRegistryName("hbm", "ore_iodine").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_arsenic = new Block(Material.ROCK).setUnlocalizedName("ore_arsenic").setRegistryName("hbm", "ore_arsenic").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_silicon = new Block(Material.ROCK).setUnlocalizedName("ore_silicon").setRegistryName("hbm", "ore_silicon").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_fire = new Block(Material.ROCK).setUnlocalizedName("ore_fire").setRegistryName("hbm", "ore_fire").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_shale = new Block(Material.ROCK).setUnlocalizedName("ore_shale").setRegistryName("hbm", "ore_shale").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_uranium = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_uranium").setRegistryName("hbm", "ore_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_uranium_scorched").setRegistryName("hbm", "ore_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_plutonium = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_plutonium").setRegistryName("hbm", "ore_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_titanium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_titanium").setRegistryName("hbm", "ore_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_sulfur = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sulfur").setRegistryName("hbm", "ore_sulfur").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_glowstone = new BlockOre(Material.ROCK).setUnlocalizedName("ore_glowstone").setRegistryName("hbm", "ore_glowstone").setCreativeTab(MainRegistry.blockTab).setLightLevel(4F / 15F).setHardness(5.0F).setResistance(10.0F);
+        ore_thorium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_thorium").setRegistryName("hbm", "ore_thorium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_morkite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_morkite").setRegistryName("hbm", "ore_morkite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_niter = new BlockOre(Material.ROCK).setUnlocalizedName("ore_niter").setRegistryName("hbm", "ore_niter").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_copper = new BlockOre(Material.ROCK).setUnlocalizedName("ore_copper").setRegistryName("hbm", "ore_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_nickel = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nickel").setRegistryName("hbm", "ore_nickel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_tungsten = new BlockOre(Material.ROCK).setUnlocalizedName("ore_tungsten").setRegistryName("hbm", "ore_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_aluminium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_aluminium").setRegistryName("hbm", "ore_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_fluorite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_fluorite").setRegistryName("hbm", "ore_fluorite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_lead = new BlockOre(Material.ROCK).setUnlocalizedName("ore_lead").setRegistryName("hbm", "ore_lead").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_schrabidium").setRegistryName("hbm", "ore_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
+        ore_beryllium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_beryllium").setRegistryName("hbm", "ore_beryllium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        ore_lignite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_lignite").setRegistryName("hbm", "ore_lignite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        ore_asbestos = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_asbestos").setRegistryName("hbm", "ore_asbestos").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        ore_mineral = new BlockOre(Material.ROCK).setUnlocalizedName("ore_mineral").setRegistryName("hbm", "ore_mineral").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_zinc = new BlockOre(Material.ROCK).setUnlocalizedName("ore_zinc").setRegistryName("hbm", "ore_zinc").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_lithium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_lithium").setRegistryName("hbm", "ore_lithium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_niobium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_niobium").setRegistryName("hbm", "ore_niobium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_cadmium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_cadmium").setRegistryName("hbm", "ore_cadmium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_palladium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_palladium").setRegistryName("hbm", "ore_palladium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_iodine = new BlockOre(Material.ROCK).setUnlocalizedName("ore_iodine").setRegistryName("hbm", "ore_iodine").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_arsenic = new BlockOre(Material.ROCK).setUnlocalizedName("ore_arsenic").setRegistryName("hbm", "ore_arsenic").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_silicon = new BlockOre(Material.ROCK).setUnlocalizedName("ore_silicon").setRegistryName("hbm", "ore_silicon").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_fire = new BlockOre(Material.ROCK).setUnlocalizedName("ore_fire").setRegistryName("hbm", "ore_fire").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_shale = new BlockOre(Material.ROCK).setUnlocalizedName("ore_shale").setRegistryName("hbm", "ore_shale").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
 
         // Rare minerals
-        ore_australium = new Block(Material.ROCK).setUnlocalizedName("ore_australium").setRegistryName("hbm", "ore_australium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_rare = new Block(Material.ROCK).setUnlocalizedName("ore_rare").setRegistryName("hbm", "ore_rare").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_cobalt = new Block(Material.ROCK).setUnlocalizedName("ore_cobalt").setRegistryName("hbm", "ore_cobalt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_cinnebar = new Block(Material.ROCK).setUnlocalizedName("ore_cinnebar").setRegistryName("hbm", "ore_cinnebar").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_coltan = new Block(Material.ROCK).setUnlocalizedName("ore_coltan").setRegistryName("hbm", "ore_coltan").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(10.0F);
-        ore_lanthanium = new Block(Material.ROCK).setUnlocalizedName("ore_lanthanium").setRegistryName("hbm", "ore_lanthanium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(10.0F);
+        ore_australium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_australium").setRegistryName("hbm", "ore_australium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_rare = new BlockOre(Material.ROCK).setUnlocalizedName("ore_rare").setRegistryName("hbm", "ore_rare").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_cobalt = new BlockOre(Material.ROCK).setUnlocalizedName("ore_cobalt").setRegistryName("hbm", "ore_cobalt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_cinnebar = new BlockOre(Material.ROCK).setUnlocalizedName("ore_cinnebar").setRegistryName("hbm", "ore_cinnebar").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_coltan = new BlockOre(Material.ROCK).setUnlocalizedName("ore_coltan").setRegistryName("hbm", "ore_coltan").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(10.0F);
+        ore_lanthanium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_lanthanium").setRegistryName("hbm", "ore_lanthanium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(10.0F);
 
         // Bedrock / volcano
         ore_bedrock = new Block(Material.ROCK).setUnlocalizedName("ore_bedrock").setRegistryName("hbm", "ore_bedrock").setHardness(-1.0F).setResistance(6000000.0F);
-        ore_volcano = new Block(Material.ROCK).setUnlocalizedName("ore_volcano").setRegistryName("hbm", "ore_volcano").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(5.0F).setResistance(10.0F);
+        ore_volcano = new BlockOre(Material.ROCK).setUnlocalizedName("ore_volcano").setRegistryName("hbm", "ore_volcano").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(5.0F).setResistance(10.0F);
 
         // Nether ores
-        ore_nether_coal = new Block(Material.ROCK).setUnlocalizedName("ore_nether_coal").setRegistryName("hbm", "ore_nether_coal").setCreativeTab(MainRegistry.blockTab).setLightLevel(10F / 15F).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_smoldering = new Block(Material.ROCK).setUnlocalizedName("ore_nether_smoldering").setRegistryName("hbm", "ore_nether_smoldering").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_uranium = new Block(Material.ROCK).setUnlocalizedName("ore_nether_uranium").setRegistryName("hbm", "ore_nether_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_uranium_scorched = new Block(Material.ROCK).setUnlocalizedName("ore_nether_uranium_scorched").setRegistryName("hbm", "ore_nether_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_plutonium = new Block(Material.ROCK).setUnlocalizedName("ore_nether_plutonium").setRegistryName("hbm", "ore_nether_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_tungsten = new Block(Material.ROCK).setUnlocalizedName("ore_nether_tungsten").setRegistryName("hbm", "ore_nether_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_sulfur = new Block(Material.ROCK).setUnlocalizedName("ore_nether_sulfur").setRegistryName("hbm", "ore_nether_sulfur").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_fire = new Block(Material.ROCK).setUnlocalizedName("ore_nether_fire").setRegistryName("hbm", "ore_nether_fire").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_cobalt = new Block(Material.ROCK).setUnlocalizedName("ore_nether_cobalt").setRegistryName("hbm", "ore_nether_cobalt").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
-        ore_nether_schrabidium = new Block(Material.ROCK).setUnlocalizedName("ore_nether_schrabidium").setRegistryName("hbm", "ore_nether_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
+        ore_nether_coal = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_coal").setRegistryName("hbm", "ore_nether_coal").setCreativeTab(MainRegistry.blockTab).setLightLevel(10F / 15F).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_smoldering = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_smoldering").setRegistryName("hbm", "ore_nether_smoldering").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_uranium = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_nether_uranium").setRegistryName("hbm", "ore_nether_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_nether_uranium_scorched").setRegistryName("hbm", "ore_nether_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_plutonium = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_nether_plutonium").setRegistryName("hbm", "ore_nether_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_tungsten = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_tungsten").setRegistryName("hbm", "ore_nether_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_sulfur = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_sulfur").setRegistryName("hbm", "ore_nether_sulfur").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_fire = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_fire").setRegistryName("hbm", "ore_nether_fire").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_cobalt = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_cobalt").setRegistryName("hbm", "ore_nether_cobalt").setCreativeTab(MainRegistry.blockTab).setHardness(0.4F).setResistance(10.0F);
+        ore_nether_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_schrabidium").setRegistryName("hbm", "ore_nether_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
 
         // Meteor
         ore_meteor = new Block(Material.ROCK).setUnlocalizedName("ore_meteor").setRegistryName("hbm", "ore_meteor").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Gneiss
         stone_gneiss = new Block(Material.ROCK).setUnlocalizedName("stone_gneiss").setRegistryName("hbm", "stone_gneiss").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_iron = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_iron").setRegistryName("hbm", "ore_gneiss_iron").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_gold = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_gold").setRegistryName("hbm", "ore_gneiss_gold").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_uranium = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_uranium").setRegistryName("hbm", "ore_gneiss_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_uranium_scorched = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_uranium_scorched").setRegistryName("hbm", "ore_gneiss_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_copper = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_copper").setRegistryName("hbm", "ore_gneiss_copper").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_asbestos = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_asbestos").setRegistryName("hbm", "ore_gneiss_asbestos").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_lithium = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_lithium").setRegistryName("hbm", "ore_gneiss_lithium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_schrabidium = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_schrabidium").setRegistryName("hbm", "ore_gneiss_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        ore_gneiss_rare = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_rare").setRegistryName("hbm", "ore_gneiss_rare").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_iron = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_iron").setRegistryName("hbm", "ore_gneiss_iron").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_gold = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_gold").setRegistryName("hbm", "ore_gneiss_gold").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_uranium = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_gneiss_uranium").setRegistryName("hbm", "ore_gneiss_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_gneiss_uranium_scorched").setRegistryName("hbm", "ore_gneiss_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_copper = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_copper").setRegistryName("hbm", "ore_gneiss_copper").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_asbestos = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_gneiss_asbestos").setRegistryName("hbm", "ore_gneiss_asbestos").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_lithium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_lithium").setRegistryName("hbm", "ore_gneiss_lithium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_schrabidium").setRegistryName("hbm", "ore_gneiss_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
+        ore_gneiss_rare = new BlockOre(Material.ROCK).setUnlocalizedName("ore_gneiss_rare").setRegistryName("hbm", "ore_gneiss_rare").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         ore_gneiss_gas = new Block(Material.ROCK).setUnlocalizedName("ore_gneiss_gas").setRegistryName("hbm", "ore_gneiss_gas").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         gneiss_brick = new Block(Material.ROCK).setUnlocalizedName("gneiss_brick").setRegistryName("hbm", "gneiss_brick").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         gneiss_tile = new Block(Material.ROCK).setUnlocalizedName("gneiss_tile").setRegistryName("hbm", "gneiss_tile").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
@@ -3542,17 +3545,17 @@ public class ModBlocks {
 
         // Depth stone and ores
         stone_depth = new Block(Material.ROCK).setUnlocalizedName("stone_depth").setRegistryName("hbm", "stone_depth").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_depth_cinnebar = new Block(Material.ROCK).setUnlocalizedName("ore_depth_cinnebar").setRegistryName("hbm", "ore_depth_cinnebar").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_depth_zirconium = new Block(Material.ROCK).setUnlocalizedName("ore_depth_zirconium").setRegistryName("hbm", "ore_depth_zirconium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_depth_borax = new Block(Material.ROCK).setUnlocalizedName("ore_depth_borax").setRegistryName("hbm", "ore_depth_borax").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_depth_cinnebar = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_cinnebar").setRegistryName("hbm", "ore_depth_cinnebar").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_depth_zirconium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_zirconium").setRegistryName("hbm", "ore_depth_zirconium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_depth_borax = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_borax").setRegistryName("hbm", "ore_depth_borax").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         cluster_depth_iron = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_iron").setRegistryName("hbm", "cluster_depth_iron").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         cluster_depth_titanium = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_titanium").setRegistryName("hbm", "cluster_depth_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         cluster_depth_tungsten = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_tungsten").setRegistryName("hbm", "cluster_depth_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_alexandrite = new Block(Material.ROCK).setUnlocalizedName("ore_alexandrite").setRegistryName("hbm", "ore_alexandrite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_alexandrite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_alexandrite").setRegistryName("hbm", "ore_alexandrite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         stone_keyhole = new Block(Material.ROCK).setUnlocalizedName("stone_keyhole").setRegistryName("hbm", "stone_keyhole").setHardness(5.0F).setResistance(10.0F);
         stone_keyhole_meta = new Block(Material.ROCK).setUnlocalizedName("stone_keyhole_meta").setRegistryName("hbm", "stone_keyhole_meta").setHardness(5.0F).setResistance(10000.0F);
         stone_depth_nether = new Block(Material.ROCK).setUnlocalizedName("stone_depth_nether").setRegistryName("hbm", "stone_depth_nether").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_depth_nether_neodymium = new Block(Material.ROCK).setUnlocalizedName("ore_depth_nether_neodymium").setRegistryName("hbm", "ore_depth_nether_neodymium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_depth_nether_neodymium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_nether_neodymium").setRegistryName("hbm", "ore_depth_nether_neodymium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Porous stones
         stone_porous = new Block(Material.ROCK).setUnlocalizedName("stone_porous").setRegistryName("hbm", "stone_porous").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
@@ -3591,7 +3594,7 @@ public class ModBlocks {
         ore_gas = new Block(Material.ROCK).setUnlocalizedName("ore_gas").setRegistryName("hbm", "ore_gas").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_brine_empty = new Block(Material.ROCK).setUnlocalizedName("ore_brine_empty").setRegistryName("hbm", "ore_brine_empty").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_brine = new Block(Material.ROCK).setUnlocalizedName("ore_brine").setRegistryName("hbm", "ore_brine").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_tikite = new Block(Material.ROCK).setUnlocalizedName("ore_tikite").setRegistryName("hbm", "ore_tikite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_tikite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_tikite").setRegistryName("hbm", "ore_tikite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_tekto_empty = new Block(Material.ROCK).setUnlocalizedName("ore_tekto_empty").setRegistryName("hbm", "ore_tekto_empty").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_tekto = new Block(Material.ROCK).setUnlocalizedName("ore_tekto").setRegistryName("hbm", "ore_tekto").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
@@ -4492,15 +4495,15 @@ public class ModBlocks {
         air_scrubber = new Block(Material.IRON).setUnlocalizedName("air_scrubber").setRegistryName("hbm", "air_scrubber").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         algae_film = new Block(Material.IRON).setUnlocalizedName("algae_film").setRegistryName("hbm", "algae_film").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         hydrobay = new Block(Material.IRON).setUnlocalizedName("hydrobay").setRegistryName("hbm", "hydrobay").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
-        gas_radon = new Block(Material.AIR).setUnlocalizedName("gas_radon").setRegistryName("hbm", "gas_radon").setCreativeTab(MainRegistry.machineTab);
-        gas_radon_dense = new Block(Material.AIR).setUnlocalizedName("gas_radon_dense").setRegistryName("hbm", "gas_radon_dense").setCreativeTab(MainRegistry.machineTab);
-        gas_radon_tomb = new Block(Material.AIR).setUnlocalizedName("gas_radon_tomb").setRegistryName("hbm", "gas_radon_tomb").setCreativeTab(MainRegistry.machineTab);
-        gas_meltdown = new Block(Material.AIR).setUnlocalizedName("gas_meltdown").setRegistryName("hbm", "gas_meltdown").setCreativeTab(MainRegistry.machineTab);
-        gas_monoxide = new Block(Material.AIR).setUnlocalizedName("gas_monoxide").setRegistryName("hbm", "gas_monoxide").setCreativeTab(MainRegistry.machineTab);
-        gas_asbestos = new Block(Material.AIR).setUnlocalizedName("gas_asbestos").setRegistryName("hbm", "gas_asbestos").setCreativeTab(MainRegistry.machineTab);
-        gas_coal = new Block(Material.AIR).setUnlocalizedName("gas_coal").setRegistryName("hbm", "gas_coal").setCreativeTab(MainRegistry.machineTab);
-        gas_flammable = new Block(Material.AIR).setUnlocalizedName("gas_flammable").setRegistryName("hbm", "gas_flammable").setCreativeTab(MainRegistry.machineTab);
-        gas_explosive = new Block(Material.AIR).setUnlocalizedName("gas_explosive").setRegistryName("hbm", "gas_explosive").setCreativeTab(MainRegistry.machineTab);
+        gas_radon = new BlockGas(Material.AIR).setUnlocalizedName("gas_radon").setRegistryName("hbm", "gas_radon").setCreativeTab(MainRegistry.machineTab);
+        gas_radon_dense = new BlockGas(Material.AIR).setUnlocalizedName("gas_radon_dense").setRegistryName("hbm", "gas_radon_dense").setCreativeTab(MainRegistry.machineTab);
+        gas_radon_tomb = new BlockGas(Material.AIR).setUnlocalizedName("gas_radon_tomb").setRegistryName("hbm", "gas_radon_tomb").setCreativeTab(MainRegistry.machineTab);
+        gas_meltdown = new BlockGas(Material.AIR).setUnlocalizedName("gas_meltdown").setRegistryName("hbm", "gas_meltdown").setCreativeTab(MainRegistry.machineTab);
+        gas_monoxide = new BlockGas(Material.AIR).setUnlocalizedName("gas_monoxide").setRegistryName("hbm", "gas_monoxide").setCreativeTab(MainRegistry.machineTab);
+        gas_asbestos = new BlockGas(Material.AIR).setUnlocalizedName("gas_asbestos").setRegistryName("hbm", "gas_asbestos").setCreativeTab(MainRegistry.machineTab);
+        gas_coal = new BlockGas(Material.AIR).setUnlocalizedName("gas_coal").setRegistryName("hbm", "gas_coal").setCreativeTab(MainRegistry.machineTab);
+        gas_flammable = new BlockGas(Material.AIR).setUnlocalizedName("gas_flammable").setRegistryName("hbm", "gas_flammable").setCreativeTab(MainRegistry.machineTab);
+        gas_explosive = new BlockGas(Material.AIR).setUnlocalizedName("gas_explosive").setRegistryName("hbm", "gas_explosive").setCreativeTab(MainRegistry.machineTab);
         vacuum = new Block(Material.AIR).setUnlocalizedName("vacuum").setRegistryName("hbm", "vacuum").setResistance(1000000.0F).setCreativeTab(MainRegistry.machineTab);
         rad_absorber = new Block(Material.IRON).setUnlocalizedName("rad_absorber").setRegistryName("hbm", "rad_absorber").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         decon = new Block(Material.IRON).setUnlocalizedName("decon").setRegistryName("hbm", "decon").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
@@ -4685,12 +4688,12 @@ public class ModBlocks {
         mush_block_stem = new Block(Material.PLANTS).setUnlocalizedName("mush_block_stem").setRegistryName("hbm", "mush_block_stem").setHardness(0.2F).setLightLevel(1.0F);
         oil_barrel = new Block(Material.IRON).setUnlocalizedName("oil_barrel").setRegistryName("hbm", "oil_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         oil_spill = new Block(Material.GROUND).setUnlocalizedName("oil_spill").setRegistryName("hbm", "oil_spill").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
-        ore_sellafield_diamond = new Block(Material.ROCK).setUnlocalizedName("ore_sellafield_diamond").setRegistryName("hbm", "ore_sellafield_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_emerald = new Block(Material.ROCK).setUnlocalizedName("ore_sellafield_emerald").setRegistryName("hbm", "ore_sellafield_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_radgem = new Block(Material.ROCK).setUnlocalizedName("ore_sellafield_radgem").setRegistryName("hbm", "ore_sellafield_radgem").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_schrabidium = new Block(Material.ROCK).setUnlocalizedName("ore_sellafield_schrabidium").setRegistryName("hbm", "ore_sellafield_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_uranium_scorched = new Block(Material.ROCK).setUnlocalizedName("ore_sellafield_uranium_scorched").setRegistryName("hbm", "ore_sellafield_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_tektite_osmiridium = new Block(Material.SAND).setUnlocalizedName("ore_tektite_osmiridium").setRegistryName("hbm", "ore_tektite_osmiridium").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
+        ore_sellafield_diamond = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_diamond").setRegistryName("hbm", "ore_sellafield_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_emerald = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_emerald").setRegistryName("hbm", "ore_sellafield_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_radgem = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_radgem").setRegistryName("hbm", "ore_sellafield_radgem").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_schrabidium").setRegistryName("hbm", "ore_sellafield_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_sellafield_uranium_scorched").setRegistryName("hbm", "ore_sellafield_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_tektite_osmiridium = new BlockOre(Material.SAND).setUnlocalizedName("ore_tektite_osmiridium").setRegistryName("hbm", "ore_tektite_osmiridium").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         pink_barrel = new Block(Material.IRON).setUnlocalizedName("pink_barrel").setRegistryName("hbm", "pink_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         plant_dead = new Block(Material.ROCK).setUnlocalizedName("plant_dead").setRegistryName("hbm", "plant_dead").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         plant_flower = new Block(Material.ROCK).setUnlocalizedName("plant_flower").setRegistryName("hbm", "plant_flower").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
