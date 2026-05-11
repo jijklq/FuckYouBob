@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:factory_advanced_hull"
+    }
+  }
+}

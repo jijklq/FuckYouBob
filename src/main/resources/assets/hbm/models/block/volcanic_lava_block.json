@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hbm:blocks/volcanic_lava_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:machine_armor_table"
+    }
+  }
+}

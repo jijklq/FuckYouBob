@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:hadron_coil_magtung"
+    }
+  }
+}

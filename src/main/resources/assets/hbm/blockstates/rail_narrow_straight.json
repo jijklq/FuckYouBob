@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:rail_narrow_straight"
+    }
+  }
+}

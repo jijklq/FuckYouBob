@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:factory_titanium_hull"
+    }
+  }
+}

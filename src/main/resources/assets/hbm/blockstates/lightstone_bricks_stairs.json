@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hbm:lightstone_bricks_stairs"
+    }
+  }
+}
