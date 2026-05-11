@@ -26,3 +26,7 @@ forge*changelog.txt
 
 # Local-only notes
 CLAUDE.md
+
+# Python cache
+scripts/__pycache__/
+**/*.pyc
