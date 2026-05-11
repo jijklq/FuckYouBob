@@ -1,8 +1,8 @@
-# FuckYouBob — HBM NTM port to 1.12.2
+# HBM NTM 1.12.2 port
 
 Порт [HBM's Nuclear Tech](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT) (форк [James](https://github.com/JameH2/Hbm-s-Nuclear-Tech-GIT) с космосом и планетами) с Minecraft 1.7.10 на 1.12.2.
 
-**Не аффилировано с HBM, Bobcat и авторами оригинала.** Название — внутренний мем, ничего личного.
+**Неофициальный порт, не аффилирован с HBM, Bobcat и авторами оригинала.**
 
 ## ⚠️ Вайбкод-дисклеймер
 
