@@ -2,6 +2,7 @@ package com.hbm.blocks;
 
 import com.hbm.main.MainRegistry;
 import net.minecraft.block.Block;
+import com.hbm.blocks.generic.BlockCluster;
 import com.hbm.blocks.generic.BlockGas;
 import com.hbm.blocks.generic.BlockOre;
 import com.hbm.blocks.generic.BlockOreOutgas;
@@ -3548,9 +3549,9 @@ public class ModBlocks {
         ore_depth_cinnebar = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_cinnebar").setRegistryName("hbm", "ore_depth_cinnebar").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_depth_zirconium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_zirconium").setRegistryName("hbm", "ore_depth_zirconium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_depth_borax = new BlockOre(Material.ROCK).setUnlocalizedName("ore_depth_borax").setRegistryName("hbm", "ore_depth_borax").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        cluster_depth_iron = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_iron").setRegistryName("hbm", "cluster_depth_iron").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        cluster_depth_titanium = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_titanium").setRegistryName("hbm", "cluster_depth_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        cluster_depth_tungsten = new Block(Material.ROCK).setUnlocalizedName("cluster_depth_tungsten").setRegistryName("hbm", "cluster_depth_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        cluster_depth_iron = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_depth_iron").setRegistryName("hbm", "cluster_depth_iron").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        cluster_depth_titanium = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_depth_titanium").setRegistryName("hbm", "cluster_depth_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        cluster_depth_tungsten = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_depth_tungsten").setRegistryName("hbm", "cluster_depth_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ore_alexandrite = new BlockOre(Material.ROCK).setUnlocalizedName("ore_alexandrite").setRegistryName("hbm", "ore_alexandrite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         stone_keyhole = new Block(Material.ROCK).setUnlocalizedName("stone_keyhole").setRegistryName("hbm", "stone_keyhole").setHardness(5.0F).setResistance(10.0F);
         stone_keyhole_meta = new Block(Material.ROCK).setUnlocalizedName("stone_keyhole_meta").setRegistryName("hbm", "stone_keyhole_meta").setHardness(5.0F).setResistance(10000.0F);
@@ -3580,10 +3581,10 @@ public class ModBlocks {
         basalt_tiles = new Block(Material.ROCK).setUnlocalizedName("basalt_tiles").setRegistryName("hbm", "basalt_tiles").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Surface clusters
-        cluster_iron = new Block(Material.ROCK).setUnlocalizedName("cluster_iron").setRegistryName("hbm", "cluster_iron").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        cluster_titanium = new Block(Material.ROCK).setUnlocalizedName("cluster_titanium").setRegistryName("hbm", "cluster_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        cluster_aluminium = new Block(Material.ROCK).setUnlocalizedName("cluster_aluminium").setRegistryName("hbm", "cluster_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        cluster_copper = new Block(Material.ROCK).setUnlocalizedName("cluster_copper").setRegistryName("hbm", "cluster_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        cluster_iron = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_iron").setRegistryName("hbm", "cluster_iron").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        cluster_titanium = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_titanium").setRegistryName("hbm", "cluster_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        cluster_aluminium = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_aluminium").setRegistryName("hbm", "cluster_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        cluster_copper = new BlockCluster(Material.ROCK).setUnlocalizedName("cluster_copper").setRegistryName("hbm", "cluster_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
 
         // Fluid ores
         ore_oil_empty = new Block(Material.ROCK).setUnlocalizedName("ore_oil_empty").setRegistryName("hbm", "ore_oil_empty").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
