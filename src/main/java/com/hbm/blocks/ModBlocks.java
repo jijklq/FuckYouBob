@@ -1,7 +1,9 @@
 package com.hbm.blocks;
 
+import com.hbm.inventory.fluid.Fluids;
 import com.hbm.main.MainRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import com.hbm.blocks.generic.BlockCluster;
 import com.hbm.blocks.generic.BlockGas;
 import com.hbm.blocks.generic.BlockOre;
@@ -4597,11 +4599,10 @@ public class ModBlocks {
         broadcaster_pc = new Block(Material.IRON).setUnlocalizedName("broadcaster_pc").setRegistryName("hbm", "broadcaster_pc").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(15.0F);
         burning_earth = new Block(Material.GROUND).setUnlocalizedName("burning_earth").setRegistryName("hbm", "burning_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
         crashed_balefire = new Block(Material.IRON).setUnlocalizedName("crashed_balefire").setRegistryName("hbm", "crashed_balefire").setCreativeTab(MainRegistry.nukeTab).setHardness(-1.0F).setResistance(6000000.0F);
-        crop_coffee = new Block(Material.ROCK).setUnlocalizedName("crop_coffee").setRegistryName("hbm", "crop_coffee").setHardness(0.0F);
-        crop_mint = new Block(Material.ROCK).setUnlocalizedName("crop_mint").setRegistryName("hbm", "crop_mint").setHardness(0.0F);
-        crop_paraffin = new Block(Material.ROCK).setUnlocalizedName("crop_paraffin").setRegistryName("hbm", "crop_paraffin").setHardness(0.0F);
-        crop_strawberry = new Block(Material.ROCK).setUnlocalizedName("crop_strawberry").setRegistryName("hbm", "crop_strawberry").setHardness(0.0F);
-        crop_tea = new Block(Material.ROCK).setUnlocalizedName("crop_tea").setRegistryName("hbm", "crop_tea").setHardness(0.0F);
+        crop_coffee    = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_coffee").setRegistryName("hbm", "crop_coffee").setCreativeTab(MainRegistry.blockTab);
+        crop_mint      = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_mint").setRegistryName("hbm", "crop_mint").setCreativeTab(MainRegistry.blockTab);
+        crop_strawberry = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_strawberry").setRegistryName("hbm", "crop_strawberry").setCreativeTab(MainRegistry.blockTab);
+        crop_tea       = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_tea").setRegistryName("hbm", "crop_tea").setCreativeTab(MainRegistry.blockTab);
         deco_computer = new Block(Material.IRON).setUnlocalizedName("deco_computer").setRegistryName("hbm", "deco_computer").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         deco_crt = new Block(Material.IRON).setUnlocalizedName("deco_crt").setRegistryName("hbm", "deco_crt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         deco_pipe = new Block(Material.IRON).setUnlocalizedName("deco_pipe").setRegistryName("hbm", "deco_pipe").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
@@ -4706,6 +4707,8 @@ public class ModBlocks {
         red_barrel = new Block(Material.IRON).setUnlocalizedName("red_barrel").setRegistryName("hbm", "red_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         reeds = new Block(Material.ROCK).setUnlocalizedName("reeds").setRegistryName("hbm", "reeds").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         rubber_farmland = new BlockRubberFarm().setUnlocalizedName("rubber_farmland").setRegistryName("hbm", "rubber_farmland").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
+        // crop_paraffin must be after rubber_farmland (uses it as soilBlock)
+        crop_paraffin  = new BlockCrop(rubber_farmland, (a) -> a != null && (a.hasFluid(Fluids.TEKTOAIR, 0.1) || a.hasFluid(Fluids.CHLORINE, 0.1)), false).setUnlocalizedName("crop_paraffin").setRegistryName("hbm", "crop_paraffin").setCreativeTab(MainRegistry.blockTab);
         salted_fallout = new Block(Material.SNOW).setUnlocalizedName("salted_fallout").setRegistryName("hbm", "salted_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_boron_layer = new Block(Material.SAND).setUnlocalizedName("sand_boron_layer").setRegistryName("hbm", "sand_boron_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_dirty = new Block(Material.SAND).setUnlocalizedName("sand_dirty").setRegistryName("hbm", "sand_dirty").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);

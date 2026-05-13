@@ -1,7 +1,12 @@
-{
+﻿{
   "variants": {
-    "normal": {
-      "model": "hbm:crop_strawberry"
-    }
+    "age=0": { "model": "hbm:crop_strawberry" },
+    "age=1": { "model": "hbm:crop_strawberry" },
+    "age=2": { "model": "hbm:crop_strawberry" },
+    "age=3": { "model": "hbm:crop_strawberry" },
+    "age=4": { "model": "hbm:crop_strawberry" },
+    "age=5": { "model": "hbm:crop_strawberry" },
+    "age=6": { "model": "hbm:crop_strawberry" },
+    "age=7": { "model": "hbm:crop_strawberry" }
   }
 }

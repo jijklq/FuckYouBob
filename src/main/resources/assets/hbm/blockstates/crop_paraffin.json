@@ -1,7 +1,12 @@
-{
+﻿{
   "variants": {
-    "normal": {
-      "model": "hbm:crop_paraffin"
-    }
+    "age=0": { "model": "hbm:crop_paraffin" },
+    "age=1": { "model": "hbm:crop_paraffin" },
+    "age=2": { "model": "hbm:crop_paraffin" },
+    "age=3": { "model": "hbm:crop_paraffin" },
+    "age=4": { "model": "hbm:crop_paraffin" },
+    "age=5": { "model": "hbm:crop_paraffin" },
+    "age=6": { "model": "hbm:crop_paraffin" },
+    "age=7": { "model": "hbm:crop_paraffin" }
   }
 }
