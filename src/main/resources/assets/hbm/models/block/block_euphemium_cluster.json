@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "hbm:blocks/block_euphemium_cluster_side"
+    "end": "hbm:blocks/block_euphemium_cluster_top",
+    "side": "hbm:blocks/block_euphemium_cluster_side"
   }
 }
