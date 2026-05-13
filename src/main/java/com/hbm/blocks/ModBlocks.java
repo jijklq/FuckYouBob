@@ -4521,7 +4521,7 @@ public class ModBlocks {
         pink_stairs = new Block(Material.WOOD).setUnlocalizedName("pink_stairs").setRegistryName("hbm", "pink_stairs").setCreativeTab(null).setHardness(0.5F).setResistance(0.5F);
         vinyl_log = new Block(Material.WOOD).setUnlocalizedName("vinyl_log").setRegistryName("hbm", "vinyl_log").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         pvc_log = new Block(Material.WOOD).setUnlocalizedName("pvc_log").setRegistryName("hbm", "pvc_log").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
-        rubber_leaves = new Block(Material.LEAVES).setUnlocalizedName("rubber_leaves").setRegistryName("hbm", "rubber_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        rubber_leaves = new BlockRubberLeaves().setUnlocalizedName("rubber_leaves").setRegistryName("hbm", "rubber_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         rubber_grass = new Block(Material.GRASS).setUnlocalizedName("rubber_grass").setRegistryName("hbm", "rubber_grass").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         rubber_silt = new Block(Material.SAND).setUnlocalizedName("rubber_silt").setRegistryName("hbm", "rubber_silt").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         // setBlockName("rubber_plant") in original
@@ -4530,8 +4530,8 @@ public class ModBlocks {
         spike_cacti = new Block(Material.GRASS).setUnlocalizedName("rubber_tall").setRegistryName("hbm", "rubber_tall").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setResistance(0.0F);
         vinyl_sand = new Block(Material.SAND).setUnlocalizedName("vinyl_sand").setRegistryName("hbm", "vinyl_sand").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         // setBlockName("vinyl_vine") in original
-        vinyl_vines = new Block(Material.VINE).setUnlocalizedName("vinyl_vine").setRegistryName("hbm", "vinyl_vine").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
-        pet_leaves = new Block(Material.LEAVES).setUnlocalizedName("pet_leaves").setRegistryName("hbm", "pet_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        vinyl_vines = new BlockVinylVine().setUnlocalizedName("vinyl_vine").setRegistryName("hbm", "vinyl_vine").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
+        pet_leaves = new BlockRubberLeaves().setUnlocalizedName("pet_leaves").setRegistryName("hbm", "pet_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         vinyl_planks = new Block(Material.WOOD).setUnlocalizedName("vinyl_planks").setRegistryName("hbm", "vinyl_planks").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         pvc_planks = new Block(Material.WOOD).setUnlocalizedName("pvc_planks").setRegistryName("hbm", "pvc_planks").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         astroturf = new Block(Material.GRASS).setUnlocalizedName("astroturf").setRegistryName("hbm", "astroturf").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F).setResistance(0.6F);
@@ -4674,9 +4674,9 @@ public class ModBlocks {
         impact_dirt = new Block(Material.GROUND).setUnlocalizedName("impact_dirt").setRegistryName("hbm", "impact_dirt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         laythe_coral = new Block(Material.ROCK).setUnlocalizedName("laythe_coral").setRegistryName("hbm", "laythe_coral").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_coral_block = new Block(Material.CORAL).setUnlocalizedName("laythe_coral_block").setRegistryName("hbm", "laythe_coral_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
-        laythe_glow = new Block(Material.ROCK).setUnlocalizedName("laythe_glow").setRegistryName("hbm", "laythe_glow").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setLightLevel(1.0F);
+        laythe_glow = new BlockWaterPlant().setUnlocalizedName("laythe_glow").setRegistryName("hbm", "laythe_glow").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setLightLevel(1.0F);
         laythe_kelp = new Block(Material.ROCK).setUnlocalizedName("laythe_kelp").setRegistryName("hbm", "laythe_kelp").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        laythe_short = new Block(Material.ROCK).setUnlocalizedName("laythe_short").setRegistryName("hbm", "laythe_short").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        laythe_short = new BlockWaterPlant().setUnlocalizedName("laythe_short").setRegistryName("hbm", "laythe_short").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_silt = new BlockFallingTint(Material.SAND).setUnlocalizedName("laythe_silt").setRegistryName("hbm", "laythe_silt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         leaves_layer = new Block(Material.LEAVES).setUnlocalizedName("leaves_layer").setRegistryName("hbm", "leaves_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         lox_barrel = new Block(Material.IRON).setUnlocalizedName("lox_barrel").setRegistryName("hbm", "lox_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
