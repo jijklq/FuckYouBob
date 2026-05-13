@@ -30,3 +30,7 @@ CLAUDE.md
 # Python cache
 scripts/__pycache__/
 **/*.pyc
+
+# JVM crash dumps
+hs_err_pid*.log
+replay_pid*.log
