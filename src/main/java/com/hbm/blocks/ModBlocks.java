@@ -4705,7 +4705,7 @@ public class ModBlocks {
         pole_top = new Block(Material.IRON).setUnlocalizedName("pole_top").setRegistryName("hbm", "pole_top").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
         red_barrel = new Block(Material.IRON).setUnlocalizedName("red_barrel").setRegistryName("hbm", "red_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         reeds = new Block(Material.ROCK).setUnlocalizedName("reeds").setRegistryName("hbm", "reeds").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        rubber_farmland = new Block(Material.SAND).setUnlocalizedName("rubber_farmland").setRegistryName("hbm", "rubber_farmland").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
+        rubber_farmland = new BlockRubberFarm().setUnlocalizedName("rubber_farmland").setRegistryName("hbm", "rubber_farmland").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         salted_fallout = new Block(Material.SNOW).setUnlocalizedName("salted_fallout").setRegistryName("hbm", "salted_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_boron_layer = new Block(Material.SAND).setUnlocalizedName("sand_boron_layer").setRegistryName("hbm", "sand_boron_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_dirty = new Block(Material.SAND).setUnlocalizedName("sand_dirty").setRegistryName("hbm", "sand_dirty").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
