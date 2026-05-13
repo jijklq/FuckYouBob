@@ -4675,7 +4675,7 @@ public class ModBlocks {
         laythe_coral = new Block(Material.ROCK).setUnlocalizedName("laythe_coral").setRegistryName("hbm", "laythe_coral").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_coral_block = new Block(Material.CORAL).setUnlocalizedName("laythe_coral_block").setRegistryName("hbm", "laythe_coral_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         laythe_glow = new BlockWaterPlant().setUnlocalizedName("laythe_glow").setRegistryName("hbm", "laythe_glow").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setLightLevel(1.0F);
-        laythe_kelp = new Block(Material.ROCK).setUnlocalizedName("laythe_kelp").setRegistryName("hbm", "laythe_kelp").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        laythe_kelp = new BlockKelp().setUnlocalizedName("laythe_kelp").setRegistryName("hbm", "laythe_kelp").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_short = new BlockWaterPlant().setUnlocalizedName("laythe_short").setRegistryName("hbm", "laythe_short").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_silt = new BlockFallingTint(Material.SAND).setUnlocalizedName("laythe_silt").setRegistryName("hbm", "laythe_silt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         leaves_layer = new Block(Material.LEAVES).setUnlocalizedName("leaves_layer").setRegistryName("hbm", "leaves_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);

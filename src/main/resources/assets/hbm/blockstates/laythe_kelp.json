@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:laythe_kelp"
-    }
+    "top=false": { "model": "hbm:laythe_kelp" },
+    "top=true":  { "model": "hbm:laythe_kelp" }
   }
 }
