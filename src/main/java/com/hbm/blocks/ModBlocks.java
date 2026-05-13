@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import com.hbm.blocks.generic.BlockCluster;
 import com.hbm.blocks.generic.BlockGas;
 import com.hbm.blocks.generic.BlockOre;
+import com.hbm.blocks.generic.BlockFallingTint;
 import com.hbm.blocks.generic.BlockOreOutgas;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
@@ -4676,7 +4677,7 @@ public class ModBlocks {
         laythe_glow = new Block(Material.ROCK).setUnlocalizedName("laythe_glow").setRegistryName("hbm", "laythe_glow").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setLightLevel(1.0F);
         laythe_kelp = new Block(Material.ROCK).setUnlocalizedName("laythe_kelp").setRegistryName("hbm", "laythe_kelp").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_short = new Block(Material.ROCK).setUnlocalizedName("laythe_short").setRegistryName("hbm", "laythe_short").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        laythe_silt = new Block(Material.SAND).setUnlocalizedName("laythe_silt").setRegistryName("hbm", "laythe_silt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
+        laythe_silt = new BlockFallingTint(Material.SAND).setUnlocalizedName("laythe_silt").setRegistryName("hbm", "laythe_silt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         leaves_layer = new Block(Material.LEAVES).setUnlocalizedName("leaves_layer").setRegistryName("hbm", "leaves_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         lox_barrel = new Block(Material.IRON).setUnlocalizedName("lox_barrel").setRegistryName("hbm", "lox_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         minmus_regolith = new Block(Material.ROCK).setUnlocalizedName("minmus_regolith").setRegistryName("hbm", "minmus_regolith").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
