@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:plant_tall_laythe"
-    }
+    "type=0,half=false": { "model": "hbm:plant_tall_laythe" },
+    "type=0,half=true":  { "model": "hbm:plant_tall_laythe" }
   }
 }

@@ -18,11 +18,12 @@ import net.minecraft.world.World;
 
 public class BlockKelp extends Block {
 
-    // true = top piece (no kelp above, meta 8 in original), false = lower piece (kelp above, meta 0)
+    // TOP is visual-only — not stored in meta, recomputed dynamically in getActualState.
+    // Avoids the onBlockAdded→setBlockState(flag=2) cycle that could interfere with placement.
     public static final PropertyBool TOP = PropertyBool.create("top");
 
     public BlockKelp() {
-        super(Material.WATER);
+        super(Material.GLASS);
         this.setDefaultState(this.blockState.getBaseState().withProperty(TOP, false));
     }
 
@@ -31,14 +32,21 @@ public class BlockKelp extends Block {
         return new BlockStateContainer(this, TOP);
     }
 
+    // Meta is always 0 — TOP is not persisted, recomputed on load via getActualState.
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(TOP, meta != 0);
+        return this.getDefaultState();
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return state.getValue(TOP) ? 8 : 0;
+        return 0;
+    }
+
+    @Override
+    public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
+        boolean top = worldIn.getBlockState(pos.up()).getBlock() != this;
+        return state.withProperty(TOP, top);
     }
 
     @Override
@@ -68,16 +76,6 @@ public class BlockKelp extends Block {
     }
 
     @Override
-    public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
-        this.updateBlockMeta(worldIn, pos);
-    }
-
-    private void updateBlockMeta(World world, BlockPos pos) {
-        boolean top = (world.getBlockState(pos.up()).getBlock() != this);
-        world.setBlockState(pos, this.getDefaultState().withProperty(TOP, top), 2);
-    }
-
-    @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return ModItems.saltleaf;
     }
@@ -89,10 +87,8 @@ public class BlockKelp extends Block {
 
     @Override
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
-        if(!this.canKelpStay(worldIn, pos)) {
+        if (!this.canKelpStay(worldIn, pos)) {
             worldIn.setBlockState(pos, Blocks.WATER.getDefaultState());
-        } else {
-            this.updateBlockMeta(worldIn, pos);
         }
     }
 }

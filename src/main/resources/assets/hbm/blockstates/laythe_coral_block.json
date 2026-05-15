@@ -1,7 +1,9 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:laythe_coral_block"
-    }
+    "variant=0": { "model": "hbm:laythe_coral_block" },
+    "variant=1": { "model": "hbm:laythe_coral_block" },
+    "variant=2": { "model": "hbm:laythe_coral_block" },
+    "variant=3": { "model": "hbm:laythe_coral_block" },
+    "variant=4": { "model": "hbm:laythe_coral_block" }
   }
 }

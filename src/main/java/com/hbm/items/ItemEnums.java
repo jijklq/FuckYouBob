@@ -1,9 +1,13 @@
 package com.hbm.items;
 
-// Stub — only EnumTarType.WAX needed by BlockCrop; full enum ported with items
+// Stub — partial enum port; extended as needed
 public class ItemEnums {
 
     public enum EnumTarType {
         WAX;
+    }
+
+    public enum EnumPlantType {
+        MUSTARDWILLOW;
     }
 }

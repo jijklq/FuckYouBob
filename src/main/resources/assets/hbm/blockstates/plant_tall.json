@@ -1,7 +1,12 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:plant_tall"
-    }
+    "type=0,half=false": { "model": "hbm:plant_tall" },
+    "type=0,half=true":  { "model": "hbm:plant_tall" },
+    "type=1,half=false": { "model": "hbm:plant_tall" },
+    "type=1,half=true":  { "model": "hbm:plant_tall" },
+    "type=2,half=false": { "model": "hbm:plant_tall" },
+    "type=2,half=true":  { "model": "hbm:plant_tall" },
+    "type=3,half=false": { "model": "hbm:plant_tall" },
+    "type=3,half=true":  { "model": "hbm:plant_tall" }
   }
 }

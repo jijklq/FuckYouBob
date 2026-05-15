@@ -5,6 +5,11 @@ import com.hbm.main.MainRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import com.hbm.blocks.generic.BlockCluster;
+import com.hbm.blocks.generic.BlockDeadPlant;
+import com.hbm.blocks.generic.BlockMush;
+import com.hbm.blocks.generic.BlockNTMFlower;
+import com.hbm.blocks.generic.BlockTallPlant;
+import com.hbm.blocks.generic.BlockTallPlantWater;
 import com.hbm.blocks.generic.BlockGas;
 import com.hbm.blocks.generic.BlockOre;
 import com.hbm.blocks.generic.BlockFallingTint;
@@ -14,6 +19,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import com.hbm.items.blocks.ItemBlockEnumMulti;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
@@ -3386,7 +3392,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(ike_stone).setRegistryName(ike_stone.getRegistryName()));
         event.getRegistry().register(new ItemBlock(impact_dirt).setRegistryName(impact_dirt.getRegistryName()));
         event.getRegistry().register(new ItemBlock(laythe_coral).setRegistryName(laythe_coral.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(laythe_coral_block).setRegistryName(laythe_coral_block.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(laythe_coral_block).setRegistryName(laythe_coral_block.getRegistryName()));
         event.getRegistry().register(new ItemBlock(laythe_glow).setRegistryName(laythe_glow.getRegistryName()));
         event.getRegistry().register(new ItemBlock(laythe_kelp).setRegistryName(laythe_kelp.getRegistryName()));
         event.getRegistry().register(new ItemBlock(laythe_short).setRegistryName(laythe_short.getRegistryName()));
@@ -3411,8 +3417,8 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(ore_tektite_osmiridium).setRegistryName(ore_tektite_osmiridium.getRegistryName()));
         event.getRegistry().register(new ItemBlock(pink_barrel).setRegistryName(pink_barrel.getRegistryName()));
         event.getRegistry().register(new ItemBlock(plant_dead).setRegistryName(plant_dead.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(plant_flower).setRegistryName(plant_flower.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(plant_tall).setRegistryName(plant_tall.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(plant_flower).setRegistryName(plant_flower.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(plant_tall).setRegistryName(plant_tall.getRegistryName()));
         event.getRegistry().register(new ItemBlock(plant_tall_laythe).setRegistryName(plant_tall_laythe.getRegistryName()));
         event.getRegistry().register(new ItemBlock(pole_satellite_receiver).setRegistryName(pole_satellite_receiver.getRegistryName()));
         event.getRegistry().register(new ItemBlock(pole_top).setRegistryName(pole_top.getRegistryName()));
@@ -3424,7 +3430,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(sand_dirty).setRegistryName(sand_dirty.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sand_dirty_red).setRegistryName(sand_dirty_red.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sand_mix).setRegistryName(sand_mix.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(sapling_pvc).setRegistryName(sapling_pvc.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(sapling_pvc).setRegistryName(sapling_pvc.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sellafield).setRegistryName(sellafield.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sellafield_bedrock).setRegistryName(sellafield_bedrock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sellafield_slaked).setRegistryName(sellafield_slaked.getRegistryName()));
@@ -4674,7 +4680,7 @@ public class ModBlocks {
         ike_stone = new Block(Material.ROCK).setUnlocalizedName("ike_stone").setRegistryName("hbm", "ike_stone").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         impact_dirt = new Block(Material.GROUND).setUnlocalizedName("impact_dirt").setRegistryName("hbm", "impact_dirt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         laythe_coral = new Block(Material.ROCK).setUnlocalizedName("laythe_coral").setRegistryName("hbm", "laythe_coral").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        laythe_coral_block = new Block(Material.CORAL).setUnlocalizedName("laythe_coral_block").setRegistryName("hbm", "laythe_coral_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
+        laythe_coral_block = new BlockCoral().setUnlocalizedName("laythe_coral_block").setRegistryName("hbm", "laythe_coral_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         laythe_glow = new BlockWaterPlant().setUnlocalizedName("laythe_glow").setRegistryName("hbm", "laythe_glow").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F).setLightLevel(1.0F);
         laythe_kelp = new BlockKelp().setUnlocalizedName("laythe_kelp").setRegistryName("hbm", "laythe_kelp").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         laythe_short = new BlockWaterPlant().setUnlocalizedName("laythe_short").setRegistryName("hbm", "laythe_short").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
@@ -4686,7 +4692,7 @@ public class ModBlocks {
         minmus_stone = new Block(Material.ROCK).setUnlocalizedName("minmus_stone").setRegistryName("hbm", "minmus_stone").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         moho_regolith = new Block(Material.ROCK).setUnlocalizedName("moho_regolith").setRegistryName("hbm", "moho_regolith").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         moho_stone = new Block(Material.ROCK).setUnlocalizedName("moho_stone").setRegistryName("hbm", "moho_stone").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
-        mush = new Block(Material.PLANTS).setUnlocalizedName("mush").setRegistryName("hbm", "mush").setCreativeTab(MainRegistry.blockTab).setLightLevel(0.5F);
+        mush = new BlockMush(Material.PLANTS).setUnlocalizedName("mush").setRegistryName("hbm", "mush").setCreativeTab(MainRegistry.blockTab).setLightLevel(0.5F);
         mush_block = new Block(Material.PLANTS).setUnlocalizedName("mush_block").setRegistryName("hbm", "mush_block").setHardness(0.2F).setLightLevel(1.0F);
         mush_block_stem = new Block(Material.PLANTS).setUnlocalizedName("mush_block_stem").setRegistryName("hbm", "mush_block_stem").setHardness(0.2F).setLightLevel(1.0F);
         oil_barrel = new Block(Material.IRON).setUnlocalizedName("oil_barrel").setRegistryName("hbm", "oil_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
@@ -4698,10 +4704,10 @@ public class ModBlocks {
         ore_sellafield_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_sellafield_uranium_scorched").setRegistryName("hbm", "ore_sellafield_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
         ore_tektite_osmiridium = new BlockOre(Material.SAND).setUnlocalizedName("ore_tektite_osmiridium").setRegistryName("hbm", "ore_tektite_osmiridium").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         pink_barrel = new Block(Material.IRON).setUnlocalizedName("pink_barrel").setRegistryName("hbm", "pink_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
-        plant_dead = new Block(Material.ROCK).setUnlocalizedName("plant_dead").setRegistryName("hbm", "plant_dead").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        plant_flower = new Block(Material.ROCK).setUnlocalizedName("plant_flower").setRegistryName("hbm", "plant_flower").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        plant_tall = new Block(Material.ROCK).setUnlocalizedName("plant_tall").setRegistryName("hbm", "plant_tall").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
-        plant_tall_laythe = new Block(Material.ROCK).setUnlocalizedName("plant_tall_laythe").setRegistryName("hbm", "plant_tall_laythe").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        plant_dead = new BlockDeadPlant().setUnlocalizedName("plant_dead").setRegistryName("hbm", "plant_dead").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        plant_flower = new BlockNTMFlower().setUnlocalizedName("plant_flower").setRegistryName("hbm", "plant_flower").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        plant_tall = new BlockTallPlant().setUnlocalizedName("plant_tall").setRegistryName("hbm", "plant_tall").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
+        plant_tall_laythe = new BlockTallPlantWater().setUnlocalizedName("plant_tall_laythe").setRegistryName("hbm", "plant_tall_laythe").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
         pole_satellite_receiver = new Block(Material.IRON).setUnlocalizedName("pole_satellite_receiver").setRegistryName("hbm", "pole_satellite_receiver").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
         pole_top = new Block(Material.IRON).setUnlocalizedName("pole_top").setRegistryName("hbm", "pole_top").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
         red_barrel = new Block(Material.IRON).setUnlocalizedName("red_barrel").setRegistryName("hbm", "red_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
@@ -4714,7 +4720,7 @@ public class ModBlocks {
         sand_dirty = new Block(Material.SAND).setUnlocalizedName("sand_dirty").setRegistryName("hbm", "sand_dirty").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         sand_dirty_red = new Block(Material.SAND).setUnlocalizedName("sand_dirty_red").setRegistryName("hbm", "sand_dirty_red").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         sand_mix = new Block(Material.SAND).setUnlocalizedName("sand_mix").setRegistryName("hbm", "sand_mix").setCreativeTab(MainRegistry.machineTab).setHardness(0.5F);
-        sapling_pvc = new Block(Material.ROCK).setUnlocalizedName("sapling_pvc").setRegistryName("hbm", "sapling_pvc").setCreativeTab(MainRegistry.blockTab);
+        sapling_pvc = new BlockNTSapling().setUnlocalizedName("sapling_pvc").setRegistryName("hbm", "sapling_pvc").setCreativeTab(MainRegistry.blockTab);
         sellafield = new Block(Material.ROCK).setUnlocalizedName("sellafield").setRegistryName("hbm", "sellafield").setHardness(5.0F);
         sellafield_bedrock = new Block(Material.ROCK).setUnlocalizedName("sellafield_bedrock").setRegistryName("hbm", "sellafield_bedrock").setCreativeTab(MainRegistry.blockTab).setHardness(-1.0F).setResistance(6000000.0F);
         sellafield_slaked = new Block(Material.ROCK).setUnlocalizedName("sellafield_slaked").setRegistryName("hbm", "sellafield_slaked").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
@@ -4745,5 +4751,16 @@ public class ModBlocks {
         if(Loader.isModLoaded("OpenComputers")) {
             oc_cable_paintable = new Block(Material.IRON).setUnlocalizedName("oc_cable_paintable").setRegistryName("hbm", "oc_cable_paintable").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         }
+    }
+
+    // Drop the block's item but with damage=0 (preserves recipe compat when damageDropped would break it)
+    public static java.util.List<net.minecraft.item.ItemStack> getDropsWithoutDamage(Block block, net.minecraft.block.state.IBlockState state, int fortune, java.util.Random rand) {
+        java.util.List<net.minecraft.item.ItemStack> ret = new java.util.ArrayList<>();
+        int count = block.quantityDroppedWithBonus(fortune, rand);
+        for (int i = 0; i < count; i++) {
+            net.minecraft.item.Item item = block.getItemDropped(state, rand, fortune);
+            if (item != null) ret.add(new net.minecraft.item.ItemStack(item, 1, 0));
+        }
+        return ret;
     }
 }

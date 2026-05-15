@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 public class BlockWaterPlant extends Block {
 
     public BlockWaterPlant() {
-        super(Material.WATER);
+        super(Material.GLASS);
     }
 
     @Override

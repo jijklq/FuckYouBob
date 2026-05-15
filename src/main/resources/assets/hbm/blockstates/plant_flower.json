@@ -1,7 +1,12 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:plant_flower"
-    }
+    "variant=0": { "model": "hbm:plant_flower" },
+    "variant=1": { "model": "hbm:plant_flower" },
+    "variant=2": { "model": "hbm:plant_flower" },
+    "variant=3": { "model": "hbm:plant_flower" },
+    "variant=4": { "model": "hbm:plant_flower" },
+    "variant=5": { "model": "hbm:plant_flower" },
+    "variant=6": { "model": "hbm:plant_flower" },
+    "variant=7": { "model": "hbm:plant_flower" }
   }
 }
