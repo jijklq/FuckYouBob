@@ -12,6 +12,8 @@ import com.hbm.blocks.generic.BlockTallPlant;
 import com.hbm.blocks.generic.BlockTallPlantWater;
 import com.hbm.blocks.generic.BlockGas;
 import com.hbm.blocks.generic.BlockOre;
+import com.hbm.blocks.generic.BlockOreBasalt;
+import com.hbm.blocks.generic.BlockMeteorOre;
 import com.hbm.blocks.generic.BlockFallingTint;
 import com.hbm.blocks.generic.BlockOreOutgas;
 import net.minecraft.block.BlockFalling;
@@ -3535,7 +3537,7 @@ public class ModBlocks {
         ore_nether_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_nether_schrabidium").setRegistryName("hbm", "ore_nether_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
 
         // Meteor
-        ore_meteor = new Block(Material.ROCK).setUnlocalizedName("ore_meteor").setRegistryName("hbm", "ore_meteor").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_meteor = new BlockMeteorOre().setUnlocalizedName("ore_meteor").setRegistryName("hbm", "ore_meteor").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Gneiss
         stone_gneiss = new Block(Material.ROCK).setUnlocalizedName("stone_gneiss").setRegistryName("hbm", "stone_gneiss").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
@@ -3583,7 +3585,7 @@ public class ModBlocks {
 
         // Basalt
         basalt = new Block(Material.ROCK).setUnlocalizedName("basalt").setRegistryName("hbm", "basalt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        ore_basalt = new Block(Material.ROCK).setUnlocalizedName("ore_basalt").setRegistryName("hbm", "ore_basalt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        ore_basalt = new BlockOreBasalt().setUnlocalizedName("ore_basalt").setRegistryName("hbm", "ore_basalt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         basalt_smooth = new Block(Material.ROCK).setUnlocalizedName("basalt_smooth").setRegistryName("hbm", "basalt_smooth").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         basalt_brick = new Block(Material.ROCK).setUnlocalizedName("basalt_brick").setRegistryName("hbm", "basalt_brick").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         basalt_polished = new Block(Material.ROCK).setUnlocalizedName("basalt_polished").setRegistryName("hbm", "basalt_polished").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
