@@ -1,6 +1,7 @@
 package com.hbm.main;
 
 import com.hbm.config.ClientConfig;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,5 +22,10 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void postInit(FMLPostInitializationEvent event) {
         super.postInit(event);
+    }
+
+    @Override
+    public void effectNT(NBTTagCompound data) {
+        // TODO: реальные NT-эффекты на render-этапе
     }
 }
