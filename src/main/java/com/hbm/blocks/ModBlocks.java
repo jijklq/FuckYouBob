@@ -1,6 +1,8 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import net.minecraft.block.SoundType;
+import com.hbm.blocks.generic.WasteEarth;
 import com.hbm.blocks.generic.BlockStepEffect;
 import com.hbm.blocks.generic.WasteLeaves;
 import com.hbm.blocks.generic.WasteLog;
@@ -4625,7 +4627,7 @@ public class ModBlocks {
         brick_jungle_trap = new Block(Material.ROCK).setUnlocalizedName("brick_jungle_trap").setRegistryName("hbm", "brick_jungle_trap").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(360.0F);
         brick_red = new BlockRedBrick(Material.ROCK).setUnlocalizedName("brick_red").setRegistryName("hbm", "brick_red");
         broadcaster_pc = new Block(Material.IRON).setUnlocalizedName("broadcaster_pc").setRegistryName("hbm", "broadcaster_pc").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(15.0F);
-        burning_earth = new Block(Material.GROUND).setUnlocalizedName("burning_earth").setRegistryName("hbm", "burning_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
+        burning_earth = new WasteEarth(Material.GROUND, true, SoundType.PLANT).setUnlocalizedName("burning_earth").setRegistryName("hbm", "burning_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
         crashed_balefire = new Block(Material.IRON).setUnlocalizedName("crashed_balefire").setRegistryName("hbm", "crashed_balefire").setCreativeTab(MainRegistry.nukeTab).setHardness(-1.0F).setResistance(6000000.0F);
         crop_coffee    = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_coffee").setRegistryName("hbm", "crop_coffee").setCreativeTab(MainRegistry.blockTab);
         crop_mint      = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_mint").setRegistryName("hbm", "crop_mint").setCreativeTab(MainRegistry.blockTab);
@@ -4676,7 +4678,7 @@ public class ModBlocks {
         flame_war = new Block(Material.IRON).setUnlocalizedName("flame_war").setRegistryName("hbm", "flame_war").setCreativeTab(MainRegistry.nukeTab).setHardness(5.0F).setResistance(200.0F);
         foam_layer = new Block(Material.SNOW).setUnlocalizedName("foam_layer").setRegistryName("hbm", "foam_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         frozen_dirt = new Block(Material.GROUND).setUnlocalizedName("frozen_dirt").setRegistryName("hbm", "frozen_dirt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
-        frozen_grass = new Block(Material.GROUND).setUnlocalizedName("frozen_grass").setRegistryName("hbm", "frozen_grass").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        frozen_grass = new WasteEarth(Material.GROUND, false, SoundType.GLASS).setUnlocalizedName("frozen_grass").setRegistryName("hbm", "frozen_grass").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         frozen_log = new Block(Material.WOOD).setUnlocalizedName("frozen_log").setRegistryName("hbm", "frozen_log").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         frozen_planks = new Block(Material.WOOD).setUnlocalizedName("frozen_planks").setRegistryName("hbm", "frozen_planks").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         geiger = new Block(Material.IRON).setUnlocalizedName("geiger").setRegistryName("hbm", "geiger").setCreativeTab(MainRegistry.machineTab).setHardness(15.0F).setResistance(0.25F);
@@ -4762,10 +4764,10 @@ public class ModBlocks {
         therm_exo = new Block(Material.IRON).setUnlocalizedName("therm_exo").setRegistryName("hbm", "therm_exo").setCreativeTab(MainRegistry.nukeTab).setHardness(5.0F).setResistance(200.0F);
         vine_phosphor = new Block(Material.ROCK).setUnlocalizedName("vine_phosphor").setRegistryName("hbm", "vine_phosphor").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         vitrified_barrel = new Block(Material.IRON).setUnlocalizedName("vitrified_barrel").setRegistryName("hbm", "vitrified_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
-        waste_earth = new Block(Material.GROUND).setUnlocalizedName("waste_earth").setRegistryName("hbm", "waste_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
+        waste_earth = new WasteEarth(Material.GROUND, true, SoundType.PLANT).setUnlocalizedName("waste_earth").setRegistryName("hbm", "waste_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
         waste_leaves = new WasteLeaves(Material.LEAVES).setUnlocalizedName("waste_leaves").setRegistryName("hbm", "waste_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         waste_log = new WasteLog(Material.WOOD).setUnlocalizedName("waste_log").setRegistryName("hbm", "waste_log").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(2.5F);
-        waste_mycelium = new Block(Material.GROUND).setUnlocalizedName("waste_mycelium").setRegistryName("hbm", "waste_mycelium").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F).setLightLevel(1F);
+        waste_mycelium = new WasteEarth(Material.GROUND, true, SoundType.PLANT).setUnlocalizedName("waste_mycelium").setRegistryName("hbm", "waste_mycelium").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F).setLightLevel(1F);
         waste_planks = new BlockStepEffect(Material.WOOD).setUnlocalizedName("waste_planks").setRegistryName("hbm", "waste_planks").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         waste_trinitite = new BlockStepEffect(Material.SAND).noFortune().setUnlocalizedName("waste_trinitite").setRegistryName("hbm", "waste_trinitite").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         waste_trinitite_red = new BlockStepEffect(Material.SAND).noFortune().setUnlocalizedName("waste_trinitite_red").setRegistryName("hbm", "waste_trinitite_red").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
