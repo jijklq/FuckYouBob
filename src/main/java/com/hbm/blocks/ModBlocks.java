@@ -34,6 +34,9 @@ import com.hbm.blocks.generic.BlockGeneric;
 import com.hbm.blocks.generic.BlockGenericStairs;
 import com.hbm.blocks.generic.BlockOutgas;
 import com.hbm.blocks.generic.BlockRedBrick;
+import com.hbm.blocks.generic.BlockHazard.ExtDisplayEffect;
+import com.hbm.blocks.generic.BlockHazard;
+import com.hbm.blocks.generic.BlockHotHazard;
 
 @Mod.EventBusSubscriber(modid = MainRegistry.MOD_ID)
 public class ModBlocks {
@@ -3619,22 +3622,22 @@ public class ModBlocks {
         ore_tekto = new Block(Material.ROCK).setUnlocalizedName("ore_tekto").setRegistryName("hbm", "ore_tekto").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Material blocks (nuclear)
-        block_uranium = new Block(Material.IRON).setUnlocalizedName("block_uranium").setRegistryName("hbm", "block_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_u233 = new Block(Material.IRON).setUnlocalizedName("block_u233").setRegistryName("hbm", "block_u233").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_u235 = new Block(Material.IRON).setUnlocalizedName("block_u235").setRegistryName("hbm", "block_u235").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_u238 = new Block(Material.IRON).setUnlocalizedName("block_u238").setRegistryName("hbm", "block_u238").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_uranium_fuel = new Block(Material.IRON).setUnlocalizedName("block_uranium_fuel").setRegistryName("hbm", "block_uranium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_thorium = new Block(Material.IRON).setUnlocalizedName("block_thorium").setRegistryName("hbm", "block_thorium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_thorium_fuel = new Block(Material.IRON).setUnlocalizedName("block_thorium_fuel").setRegistryName("hbm", "block_thorium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_neptunium = new Block(Material.IRON).setUnlocalizedName("block_neptunium").setRegistryName("hbm", "block_neptunium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(60.0F);
-        block_polonium = new Block(Material.IRON).setUnlocalizedName("block_polonium").setRegistryName("hbm", "block_polonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_mox_fuel = new Block(Material.IRON).setUnlocalizedName("block_mox_fuel").setRegistryName("hbm", "block_mox_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_plutonium = new Block(Material.IRON).setUnlocalizedName("block_plutonium").setRegistryName("hbm", "block_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_pu238 = new Block(Material.IRON).setUnlocalizedName("block_pu238").setRegistryName("hbm", "block_pu238").setCreativeTab(MainRegistry.blockTab).setLightLevel(5F / 15F).setHardness(5.0F).setResistance(50.0F);
-        block_pu239 = new Block(Material.IRON).setUnlocalizedName("block_pu239").setRegistryName("hbm", "block_pu239").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_pu240 = new Block(Material.IRON).setUnlocalizedName("block_pu240").setRegistryName("hbm", "block_pu240").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_pu_mix = new Block(Material.IRON).setUnlocalizedName("block_pu_mix").setRegistryName("hbm", "block_pu_mix").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
-        block_plutonium_fuel = new Block(Material.IRON).setUnlocalizedName("block_plutonium_fuel").setRegistryName("hbm", "block_plutonium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_uranium = new BlockHazard().makeBeaconable().setUnlocalizedName("block_uranium").setRegistryName("hbm", "block_uranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_u233 = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_u233").setRegistryName("hbm", "block_u233").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_u235 = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_u235").setRegistryName("hbm", "block_u235").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_u238 = new BlockHazard().makeBeaconable().setUnlocalizedName("block_u238").setRegistryName("hbm", "block_u238").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_uranium_fuel = new BlockHazard().makeBeaconable().setUnlocalizedName("block_uranium_fuel").setRegistryName("hbm", "block_uranium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_thorium = new BlockHazard().makeBeaconable().setUnlocalizedName("block_thorium").setRegistryName("hbm", "block_thorium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_thorium_fuel = new BlockHazard().makeBeaconable().setUnlocalizedName("block_thorium_fuel").setRegistryName("hbm", "block_thorium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_neptunium = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_neptunium").setRegistryName("hbm", "block_neptunium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(60.0F);
+        block_polonium = new BlockHotHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_polonium").setRegistryName("hbm", "block_polonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_mox_fuel = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_mox_fuel").setRegistryName("hbm", "block_mox_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_plutonium = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_plutonium").setRegistryName("hbm", "block_plutonium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_pu238 = new BlockHotHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_pu238").setRegistryName("hbm", "block_pu238").setCreativeTab(MainRegistry.blockTab).setLightLevel(5F / 15F).setHardness(5.0F).setResistance(50.0F);
+        block_pu239 = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_pu239").setRegistryName("hbm", "block_pu239").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_pu240 = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_pu240").setRegistryName("hbm", "block_pu240").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_pu_mix = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_pu_mix").setRegistryName("hbm", "block_pu_mix").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
+        block_plutonium_fuel = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.RADFOG).setUnlocalizedName("block_plutonium_fuel").setRegistryName("hbm", "block_plutonium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
 
         // Material blocks (metals)
         block_titanium = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_titanium").setRegistryName("hbm", "block_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(50.0F);
@@ -3665,12 +3668,12 @@ public class ModBlocks {
         block_australium = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_australium").setRegistryName("hbm", "block_australium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Material blocks (exotic/alloys)
-        block_trinitite = new Block(Material.IRON).setUnlocalizedName("block_trinitite").setRegistryName("hbm", "block_trinitite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        block_schraranium = new Block(Material.IRON).setUnlocalizedName("block_schraranium").setRegistryName("hbm", "block_schraranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(250.0F);
-        block_schrabidium = new Block(Material.IRON).setUnlocalizedName("block_schrabidium").setRegistryName("hbm", "block_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
-        block_schrabidate = new Block(Material.IRON).setUnlocalizedName("block_schrabidate").setRegistryName("hbm", "block_schrabidate").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
-        block_solinium = new Block(Material.IRON).setUnlocalizedName("block_solinium").setRegistryName("hbm", "block_solinium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
-        block_schrabidium_fuel = new Block(Material.IRON).setUnlocalizedName("block_schrabidium_fuel").setRegistryName("hbm", "block_schrabidium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
+        block_trinitite = new BlockHazard().makeBeaconable().setUnlocalizedName("block_trinitite").setRegistryName("hbm", "block_trinitite").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        block_schraranium = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.SCHRAB).setUnlocalizedName("block_schraranium").setRegistryName("hbm", "block_schraranium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(250.0F);
+        block_schrabidium = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.SCHRAB).setUnlocalizedName("block_schrabidium").setRegistryName("hbm", "block_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
+        block_schrabidate = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.SCHRAB).setUnlocalizedName("block_schrabidate").setRegistryName("hbm", "block_schrabidate").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
+        block_solinium = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.SCHRAB).setUnlocalizedName("block_solinium").setRegistryName("hbm", "block_solinium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
+        block_schrabidium_fuel = new BlockHazard().makeBeaconable().setDisplayEffect(ExtDisplayEffect.SCHRAB).setUnlocalizedName("block_schrabidium_fuel").setRegistryName("hbm", "block_schrabidium_fuel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(600.0F);
         block_euphemium = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_euphemium").setRegistryName("hbm", "block_euphemium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(60000.0F);
         block_dineutronium = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_dineutronium").setRegistryName("hbm", "block_dineutronium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(60000.0F);
         block_schrabidium_cluster = new Block(Material.ROCK).setUnlocalizedName("block_schrabidium_cluster").setRegistryName("hbm", "block_schrabidium_cluster").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(60000.0F);
@@ -3681,8 +3684,8 @@ public class ModBlocks {
         block_desh = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_desh").setRegistryName("hbm", "block_desh").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(300.0F);
         block_dura_steel = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_dura_steel").setRegistryName("hbm", "block_dura_steel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(200.0F);
         block_starmetal = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_starmetal").setRegistryName("hbm", "block_starmetal").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(400.0F);
-        block_ra226 = new Block(Material.IRON).setUnlocalizedName("block_ra226").setRegistryName("hbm", "block_ra226").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        block_actinium = new Block(Material.IRON).setUnlocalizedName("block_actinium").setRegistryName("hbm", "block_actinium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        block_ra226 = new BlockHazard().makeBeaconable().setUnlocalizedName("block_ra226").setRegistryName("hbm", "block_ra226").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        block_actinium = new BlockHazard().makeBeaconable().setUnlocalizedName("block_actinium").setRegistryName("hbm", "block_actinium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         block_cap = new Block(Material.IRON).setUnlocalizedName("block_cap").setRegistryName("hbm", "block_cap").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Material blocks (non-metal)
@@ -3708,9 +3711,9 @@ public class ModBlocks {
         block_waste_painted = new Block(Material.IRON).setUnlocalizedName("block_waste_painted").setRegistryName("hbm", "block_waste_painted").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         block_waste_vitrified = new Block(Material.IRON).setUnlocalizedName("block_waste_vitrified").setRegistryName("hbm", "block_waste_vitrified").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         ancient_scrap = new BlockOutgas(Material.IRON, true, 1, true, true).setUnlocalizedName("ancient_scrap").setRegistryName("hbm", "ancient_scrap").setCreativeTab(MainRegistry.blockTab).setHardness(100.0F).setResistance(6000.0F);
-        block_corium = new Block(Material.IRON).setUnlocalizedName("block_corium").setRegistryName("hbm", "block_corium").setCreativeTab(MainRegistry.blockTab).setHardness(100.0F).setResistance(6000.0F);
+        block_corium = new BlockHazard(Material.IRON).setUnlocalizedName("block_corium").setRegistryName("hbm", "block_corium").setCreativeTab(MainRegistry.blockTab).setHardness(100.0F).setResistance(6000.0F);
         block_corium_cobble = new BlockOutgas(Material.IRON, true, 1, true, true).setUnlocalizedName("block_corium_cobble").setRegistryName("hbm", "block_corium_cobble").setCreativeTab(MainRegistry.blockTab).setHardness(100.0F).setResistance(6000.0F);
-        block_white_phosphorus = new Block(Material.ROCK).setUnlocalizedName("block_white_phosphorus").setRegistryName("hbm", "block_white_phosphorus").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        block_white_phosphorus = new BlockHazard(Material.ROCK).makeBeaconable().setUnlocalizedName("block_white_phosphorus").setRegistryName("hbm", "block_white_phosphorus").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         block_semtex = new Block(Material.TNT).setUnlocalizedName("block_semtex").setRegistryName("hbm", "block_semtex").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(2.0F);
         block_c4 = new Block(Material.TNT).setUnlocalizedName("block_c4").setRegistryName("hbm", "block_c4").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(2.0F);
         block_smore = new Block(Material.ROCK).setUnlocalizedName("block_smore").setRegistryName("hbm", "block_smore").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(600.0F);
@@ -4586,18 +4589,18 @@ public class ModBlocks {
         wand_tandem = new Block(Material.IRON).setUnlocalizedName("wand_tandem").setRegistryName("hbm", "wand_tandem");
         wand_structure = new Block(Material.IRON).setUnlocalizedName("wand_structure").setRegistryName("hbm", "wand_structure");
         logic_block = new Block(Material.IRON).setUnlocalizedName("logic_block").setRegistryName("hbm", "logic_block");
-        mud_block = new Block(Material.WATER).setUnlocalizedName("mud_block").setRegistryName("hbm", "mud_block").setResistance(500.0F);
-        acid_block = new Block(Material.WATER).setUnlocalizedName("acid_block").setRegistryName("hbm", "acid_block").setResistance(500.0F);
-        toxic_block = new Block(Material.WATER).setUnlocalizedName("toxic_block").setRegistryName("hbm", "toxic_block").setResistance(500.0F);
-        schrabidic_block = new Block(Material.WATER).setUnlocalizedName("schrabidic_block").setRegistryName("hbm", "schrabidic_block").setResistance(500.0F);
-        corium_block = new Block(Material.WATER).setUnlocalizedName("corium_block").setRegistryName("hbm", "corium_block").setResistance(500.0F);
+        mud_block = new Block(Material.GLASS).setUnlocalizedName("mud_block").setRegistryName("hbm", "mud_block").setResistance(500.0F);
+        acid_block = new Block(Material.GLASS).setUnlocalizedName("acid_block").setRegistryName("hbm", "acid_block").setResistance(500.0F);
+        toxic_block = new Block(Material.GLASS).setUnlocalizedName("toxic_block").setRegistryName("hbm", "toxic_block").setResistance(500.0F);
+        schrabidic_block = new Block(Material.GLASS).setUnlocalizedName("schrabidic_block").setRegistryName("hbm", "schrabidic_block").setResistance(500.0F);
+        corium_block = new Block(Material.GLASS).setUnlocalizedName("corium_block").setRegistryName("hbm", "corium_block").setResistance(500.0F);
         volcanic_lava_block = new Block(Material.LAVA).setUnlocalizedName("volcanic_lava_block").setRegistryName("hbm", "volcanic_lava_block").setResistance(500.0F);
         rad_lava_block = new Block(Material.LAVA).setUnlocalizedName("rad_lava_block").setRegistryName("hbm", "rad_lava_block").setResistance(500.0F);
-        sulfuric_acid_block = new Block(Material.WATER).setUnlocalizedName("sulfuric_acid_block").setRegistryName("hbm", "sulfuric_acid_block").setResistance(500.0F);
-        mercury_block = new Block(Material.WATER).setUnlocalizedName("mercury_block").setRegistryName("hbm", "mercury_block").setResistance(500.0F);
-        bromine_block = new Block(Material.WATER).setUnlocalizedName("bromine_block").setRegistryName("hbm", "bromine_block").setResistance(500.0F);
+        sulfuric_acid_block = new Block(Material.GLASS).setUnlocalizedName("sulfuric_acid_block").setRegistryName("hbm", "sulfuric_acid_block").setResistance(500.0F);
+        mercury_block = new Block(Material.GLASS).setUnlocalizedName("mercury_block").setRegistryName("hbm", "mercury_block").setResistance(500.0F);
+        bromine_block = new Block(Material.GLASS).setUnlocalizedName("bromine_block").setRegistryName("hbm", "bromine_block").setResistance(500.0F);
         concrete_liquid = new Block(Material.ROCK).setUnlocalizedName("concrete_liquid").setRegistryName("hbm", "concrete_liquid").setResistance(500.0F);
-        ccl_block = new Block(Material.WATER).setUnlocalizedName("ccl_block").setRegistryName("hbm", "ccl_block").setResistance(500.0F);
+        ccl_block = new Block(Material.GLASS).setUnlocalizedName("ccl_block").setRegistryName("hbm", "ccl_block").setResistance(500.0F);
         flesh_block = new Block(Material.SNOW).setUnlocalizedName("flesh_block").setRegistryName("hbm", "flesh_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F).setResistance(0.1F);
         charred_flesh_block = new Block(Material.SNOW).setUnlocalizedName("charred_flesh_block").setRegistryName("hbm", "charred_flesh_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F).setResistance(0.1F);
         carbonized_flesh_block = new Block(Material.SNOW).setUnlocalizedName("carbonized_flesh_block").setRegistryName("hbm", "carbonized_flesh_block").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F).setResistance(0.1F);
