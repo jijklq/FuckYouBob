@@ -1,6 +1,9 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import com.hbm.blocks.generic.BlockStepEffect;
+import com.hbm.blocks.generic.WasteLeaves;
+import com.hbm.blocks.generic.WasteLog;
 import com.hbm.items.block.ItemBlockNamedMeta;
 import com.hbm.blocks.generic.BlockSellafieldSlaked;
 import com.hbm.blocks.generic.BlockSellafieldOre;
@@ -4760,12 +4763,12 @@ public class ModBlocks {
         vine_phosphor = new Block(Material.ROCK).setUnlocalizedName("vine_phosphor").setRegistryName("hbm", "vine_phosphor").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         vitrified_barrel = new Block(Material.IRON).setUnlocalizedName("vitrified_barrel").setRegistryName("hbm", "vitrified_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         waste_earth = new Block(Material.GROUND).setUnlocalizedName("waste_earth").setRegistryName("hbm", "waste_earth").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
-        waste_leaves = new Block(Material.LEAVES).setUnlocalizedName("waste_leaves").setRegistryName("hbm", "waste_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
-        waste_log = new Block(Material.WOOD).setUnlocalizedName("waste_log").setRegistryName("hbm", "waste_log").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(2.5F);
+        waste_leaves = new WasteLeaves(Material.LEAVES).setUnlocalizedName("waste_leaves").setRegistryName("hbm", "waste_leaves").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
+        waste_log = new WasteLog(Material.WOOD).setUnlocalizedName("waste_log").setRegistryName("hbm", "waste_log").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(2.5F);
         waste_mycelium = new Block(Material.GROUND).setUnlocalizedName("waste_mycelium").setRegistryName("hbm", "waste_mycelium").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F).setLightLevel(1F);
-        waste_planks = new Block(Material.WOOD).setUnlocalizedName("waste_planks").setRegistryName("hbm", "waste_planks").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
-        waste_trinitite = new Block(Material.SAND).setUnlocalizedName("waste_trinitite").setRegistryName("hbm", "waste_trinitite").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
-        waste_trinitite_red = new Block(Material.SAND).setUnlocalizedName("waste_trinitite_red").setRegistryName("hbm", "waste_trinitite_red").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        waste_planks = new BlockStepEffect(Material.WOOD).setUnlocalizedName("waste_planks").setRegistryName("hbm", "waste_planks").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        waste_trinitite = new BlockStepEffect(Material.SAND).noFortune().setUnlocalizedName("waste_trinitite").setRegistryName("hbm", "waste_trinitite").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
+        waste_trinitite_red = new BlockStepEffect(Material.SAND).noFortune().setUnlocalizedName("waste_trinitite_red").setRegistryName("hbm", "waste_trinitite_red").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F).setResistance(2.5F);
         yellow_barrel = new Block(Material.IRON).setUnlocalizedName("yellow_barrel").setRegistryName("hbm", "yellow_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         if(Loader.isModLoaded("OpenComputers")) {
             oc_cable_paintable = new Block(Material.IRON).setUnlocalizedName("oc_cable_paintable").setRegistryName("hbm", "oc_cable_paintable").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
