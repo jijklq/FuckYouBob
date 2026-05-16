@@ -1,6 +1,10 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import com.hbm.items.block.ItemBlockNamedMeta;
+import com.hbm.blocks.generic.BlockSellafieldSlaked;
+import com.hbm.blocks.generic.BlockSellafieldOre;
+import com.hbm.blocks.generic.BlockSellafield;
 import com.hbm.inventory.fluid.Fluids;
 import com.hbm.main.MainRegistry;
 import net.minecraft.block.Block;
@@ -37,6 +41,8 @@ import com.hbm.blocks.generic.BlockRedBrick;
 import com.hbm.blocks.generic.BlockHazard.ExtDisplayEffect;
 import com.hbm.blocks.generic.BlockHazard;
 import com.hbm.blocks.generic.BlockHotHazard;
+import com.hbm.blocks.generic.BlockFallout;
+import com.hbm.blocks.generic.BlockHazardFalling;
 
 @Mod.EventBusSubscriber(modid = MainRegistry.MOD_ID)
 public class ModBlocks {
@@ -3444,7 +3450,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(sand_dirty_red).setRegistryName(sand_dirty_red.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sand_mix).setRegistryName(sand_mix.getRegistryName()));
         event.getRegistry().register(new ItemBlockEnumMulti(sapling_pvc).setRegistryName(sapling_pvc.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(sellafield).setRegistryName(sellafield.getRegistryName()));
+        event.getRegistry().register(new ItemBlockNamedMeta(sellafield).setRegistryName(sellafield.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sellafield_bedrock).setRegistryName(sellafield_bedrock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(sellafield_slaked).setRegistryName(sellafield_slaked.getRegistryName()));
         event.getRegistry().register(new ItemBlock(steel_beam).setRegistryName(steel_beam.getRegistryName()));
@@ -3704,7 +3710,7 @@ public class ModBlocks {
         block_electrical_scrap = new BlockFalling(Material.IRON).setUnlocalizedName("block_electrical_scrap").setRegistryName("hbm", "block_electrical_scrap").setCreativeTab(MainRegistry.blockTab).setHardness(2.5F).setResistance(5.0F);
         block_yellowcake = new BlockFalling(Material.SAND).setUnlocalizedName("block_yellowcake").setRegistryName("hbm", "block_yellowcake").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         block_red_phosphorus = new BlockFalling(Material.SAND).setUnlocalizedName("block_red_phosphorus").setRegistryName("hbm", "block_red_phosphorus").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        block_fallout = new BlockFalling(Material.SAND).setUnlocalizedName("block_fallout").setRegistryName("hbm", "block_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.2F).setResistance(1.0F);
+        block_fallout = new BlockHazardFalling().setUnlocalizedName("block_fallout").setRegistryName("hbm", "block_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.2F).setResistance(1.0F);
 
         // Hazardous misc
         block_waste = new Block(Material.IRON).setUnlocalizedName("block_waste").setRegistryName("hbm", "block_waste").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
@@ -4659,7 +4665,7 @@ public class ModBlocks {
         dynamite = new Block(Material.ROCK).setUnlocalizedName("dynamite").setRegistryName("hbm", "dynamite").setCreativeTab(MainRegistry.nukeTab).setHardness(0.0F);
         eve_rock = new BlockGeneric(Material.ROCK).setUnlocalizedName("eve_rock").setRegistryName("hbm", "eve_rock").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);
         eve_silt = new Block(Material.SAND).setUnlocalizedName("eve_silt").setRegistryName("hbm", "eve_silt").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
-        fallout = new Block(Material.SAND).setUnlocalizedName("fallout").setRegistryName("hbm", "fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
+        fallout = new BlockFallout(Material.SAND).setUnlocalizedName("fallout").setRegistryName("hbm", "fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         fence_metal = new Block(Material.IRON).setUnlocalizedName("fence_metal").setRegistryName("hbm", "fence_metal").setCreativeTab(MainRegistry.machineTab).setHardness(15.0F).setResistance(0.25F);
         ferric_clay = new BlockGeneric(Material.CLAY).setUnlocalizedName("ferric_clay").setRegistryName("hbm", "ferric_clay").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F);
         filing_cabinet = new Block(Material.IRON).setUnlocalizedName("filing_cabinet").setRegistryName("hbm", "filing_cabinet").setCreativeTab(MainRegistry.blockTab).setHardness(10.0F).setResistance(15.0F);
@@ -4710,11 +4716,11 @@ public class ModBlocks {
         mush_block_stem = new Block(Material.PLANTS).setUnlocalizedName("mush_block_stem").setRegistryName("hbm", "mush_block_stem").setHardness(0.2F).setLightLevel(1.0F);
         oil_barrel = new Block(Material.IRON).setUnlocalizedName("oil_barrel").setRegistryName("hbm", "oil_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         oil_spill = new Block(Material.GROUND).setUnlocalizedName("oil_spill").setRegistryName("hbm", "oil_spill").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
-        ore_sellafield_diamond = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_diamond").setRegistryName("hbm", "ore_sellafield_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_emerald = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_emerald").setRegistryName("hbm", "ore_sellafield_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_radgem = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_radgem").setRegistryName("hbm", "ore_sellafield_radgem").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_schrabidium = new BlockOre(Material.ROCK).setUnlocalizedName("ore_sellafield_schrabidium").setRegistryName("hbm", "ore_sellafield_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
-        ore_sellafield_uranium_scorched = new BlockOreOutgas(Material.ROCK, true, 5, true).setUnlocalizedName("ore_sellafield_uranium_scorched").setRegistryName("hbm", "ore_sellafield_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_diamond = new BlockSellafieldOre(Material.ROCK).setUnlocalizedName("ore_sellafield_diamond").setRegistryName("hbm", "ore_sellafield_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_emerald = new BlockSellafieldOre(Material.ROCK).setUnlocalizedName("ore_sellafield_emerald").setRegistryName("hbm", "ore_sellafield_emerald").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_radgem = new BlockSellafieldOre(Material.ROCK).setUnlocalizedName("ore_sellafield_radgem").setRegistryName("hbm", "ore_sellafield_radgem").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_schrabidium = new BlockSellafieldOre(Material.ROCK).setUnlocalizedName("ore_sellafield_schrabidium").setRegistryName("hbm", "ore_sellafield_schrabidium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        ore_sellafield_uranium_scorched = new BlockSellafieldOre(Material.ROCK).setUnlocalizedName("ore_sellafield_uranium_scorched").setRegistryName("hbm", "ore_sellafield_uranium_scorched").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
         ore_tektite_osmiridium = new BlockGeneric(Material.SAND).setUnlocalizedName("ore_tektite_osmiridium").setRegistryName("hbm", "ore_tektite_osmiridium").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         pink_barrel = new Block(Material.IRON).setUnlocalizedName("pink_barrel").setRegistryName("hbm", "pink_barrel").setCreativeTab(MainRegistry.nukeTab).setHardness(0.5F).setResistance(2.5F);
         plant_dead = new BlockDeadPlant().setUnlocalizedName("plant_dead").setRegistryName("hbm", "plant_dead").setCreativeTab(MainRegistry.blockTab).setHardness(0.0F);
@@ -4728,15 +4734,15 @@ public class ModBlocks {
         rubber_farmland = new BlockRubberFarm().setUnlocalizedName("rubber_farmland").setRegistryName("hbm", "rubber_farmland").setCreativeTab(MainRegistry.blockTab).setHardness(1.0F).setResistance(1.0F);
         // crop_paraffin must be after rubber_farmland (uses it as soilBlock)
         crop_paraffin  = new BlockCrop(rubber_farmland, (a) -> a != null && (a.hasFluid(Fluids.TEKTOAIR, 0.1) || a.hasFluid(Fluids.CHLORINE, 0.1)), false).setUnlocalizedName("crop_paraffin").setRegistryName("hbm", "crop_paraffin").setCreativeTab(MainRegistry.blockTab);
-        salted_fallout = new Block(Material.SNOW).setUnlocalizedName("salted_fallout").setRegistryName("hbm", "salted_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
+        salted_fallout = new BlockFallout(Material.SNOW).setUnlocalizedName("salted_fallout").setRegistryName("hbm", "salted_fallout").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_boron_layer = new Block(Material.SAND).setUnlocalizedName("sand_boron_layer").setRegistryName("hbm", "sand_boron_layer").setCreativeTab(MainRegistry.blockTab).setHardness(0.1F);
         sand_dirty = new Block(Material.SAND).setUnlocalizedName("sand_dirty").setRegistryName("hbm", "sand_dirty").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         sand_dirty_red = new Block(Material.SAND).setUnlocalizedName("sand_dirty_red").setRegistryName("hbm", "sand_dirty_red").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         sand_mix = new Block(Material.SAND).setUnlocalizedName("sand_mix").setRegistryName("hbm", "sand_mix").setCreativeTab(MainRegistry.machineTab).setHardness(0.5F);
         sapling_pvc = new BlockNTSapling().setUnlocalizedName("sapling_pvc").setRegistryName("hbm", "sapling_pvc").setCreativeTab(MainRegistry.blockTab);
-        sellafield = new Block(Material.ROCK).setUnlocalizedName("sellafield").setRegistryName("hbm", "sellafield").setHardness(5.0F);
-        sellafield_bedrock = new Block(Material.ROCK).setUnlocalizedName("sellafield_bedrock").setRegistryName("hbm", "sellafield_bedrock").setCreativeTab(MainRegistry.blockTab).setHardness(-1.0F).setResistance(6000000.0F);
-        sellafield_slaked = new Block(Material.ROCK).setUnlocalizedName("sellafield_slaked").setRegistryName("hbm", "sellafield_slaked").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
+        sellafield = new BlockSellafield(Material.ROCK).setUnlocalizedName("sellafield").setRegistryName("hbm", "sellafield").setHardness(5.0F);
+        sellafield_bedrock = new BlockSellafieldSlaked(Material.ROCK).setUnlocalizedName("sellafield_bedrock").setRegistryName("hbm", "sellafield_bedrock").setCreativeTab(MainRegistry.blockTab).setHardness(-1.0F).setResistance(6000000.0F);
+        sellafield_slaked = new BlockSellafieldSlaked(Material.ROCK).setUnlocalizedName("sellafield_slaked").setRegistryName("hbm", "sellafield_slaked").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F);
         steel_beam = new Block(Material.IRON).setUnlocalizedName("steel_beam").setRegistryName("hbm", "steel_beam").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
         steel_corner = new Block(Material.IRON).setUnlocalizedName("steel_corner").setRegistryName("hbm", "steel_corner").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(15.0F);
         steel_grate = new Block(Material.IRON).setUnlocalizedName("steel_grate").setRegistryName("hbm", "steel_grate").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);

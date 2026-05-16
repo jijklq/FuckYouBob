@@ -1,7 +1,10 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:sellafield"
-    }
+    "level=0": { "model": "hbm:sellafield" },
+    "level=1": { "model": "hbm:sellafield" },
+    "level=2": { "model": "hbm:sellafield" },
+    "level=3": { "model": "hbm:sellafield" },
+    "level=4": { "model": "hbm:sellafield" },
+    "level=5": { "model": "hbm:sellafield" }
   }
 }
