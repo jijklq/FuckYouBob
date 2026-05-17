@@ -1,6 +1,10 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import com.hbm.blocks.BlockEnums;
+import com.hbm.blocks.generic.BlockDecoModel;
+import com.hbm.blocks.generic.BlockDecoToaster;
+import com.hbm.blocks.generic.BlockDecoCRT;
 import com.hbm.blocks.ModSoundTypes;
 import com.hbm.blocks.generic.BlockPipe;
 import com.hbm.blocks.generic.BlockDecoCT;
@@ -3351,8 +3355,8 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(crop_paraffin).setRegistryName(crop_paraffin.getRegistryName()));
         event.getRegistry().register(new ItemBlock(crop_strawberry).setRegistryName(crop_strawberry.getRegistryName()));
         event.getRegistry().register(new ItemBlock(crop_tea).setRegistryName(crop_tea.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(deco_computer).setRegistryName(deco_computer.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(deco_crt).setRegistryName(deco_crt.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(deco_computer).setRegistryName(deco_computer.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(deco_crt).setRegistryName(deco_crt.getRegistryName()));
         event.getRegistry().register(new ItemBlock(deco_pipe).setRegistryName(deco_pipe.getRegistryName()));
         event.getRegistry().register(new ItemBlock(deco_pipe_framed).setRegistryName(deco_pipe_framed.getRegistryName()));
         event.getRegistry().register(new ItemBlock(deco_pipe_framed_green).setRegistryName(deco_pipe_framed_green.getRegistryName()));
@@ -3377,7 +3381,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(deco_pipe_rim_red).setRegistryName(deco_pipe_rim_red.getRegistryName()));
         event.getRegistry().register(new ItemBlock(deco_pipe_rim_rusted).setRegistryName(deco_pipe_rim_rusted.getRegistryName()));
         event.getRegistry().register(new ItemBlock(deco_pipe_rusted).setRegistryName(deco_pipe_rusted.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(deco_toaster).setRegistryName(deco_toaster.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(deco_toaster).setRegistryName(deco_toaster.getRegistryName()));
         event.getRegistry().register(new ItemBlock(dirt_dead).setRegistryName(dirt_dead.getRegistryName()));
         event.getRegistry().register(new ItemBlock(dirt_oily).setRegistryName(dirt_oily.getRegistryName()));
         event.getRegistry().register(new ItemBlock(dres_rock).setRegistryName(dres_rock.getRegistryName()));
@@ -4637,8 +4641,8 @@ public class ModBlocks {
         crop_mint      = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_mint").setRegistryName("hbm", "crop_mint").setCreativeTab(MainRegistry.blockTab);
         crop_strawberry = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_strawberry").setRegistryName("hbm", "crop_strawberry").setCreativeTab(MainRegistry.blockTab);
         crop_tea       = new BlockCrop(Blocks.FARMLAND, (a) -> a != null && (a.hasFluid(Fluids.EARTHAIR, 0.1) || a.hasFluid(Fluids.OXYGEN, 0.1)), true).setUnlocalizedName("crop_tea").setRegistryName("hbm", "crop_tea").setCreativeTab(MainRegistry.blockTab);
-        deco_computer = new Block(Material.IRON).setUnlocalizedName("deco_computer").setRegistryName("hbm", "deco_computer").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_crt = new Block(Material.IRON).setUnlocalizedName("deco_crt").setRegistryName("hbm", "deco_crt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_computer = new BlockDecoModel(Material.IRON, BlockEnums.DecoComputerEnum.class, true).setBlockBoundsTo(0.125F, 0F, 0F, 0.875F, 0.875F, 0.625F).setUnlocalizedName("deco_computer").setRegistryName("hbm", "deco_computer").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_crt = new BlockDecoCRT(Material.IRON).setUnlocalizedName("deco_crt").setRegistryName("hbm", "deco_crt").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         deco_pipe = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side", 0).setUnlocalizedName("deco_pipe").setRegistryName("hbm", "deco_pipe").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
         deco_pipe_framed = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side", 3).setUnlocalizedName("deco_pipe_framed").setRegistryName("hbm", "deco_pipe_framed").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
         deco_pipe_framed_green = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side_green", 3).setUnlocalizedName("deco_pipe_framed_green").setRegistryName("hbm", "deco_pipe_framed_green").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
@@ -4663,7 +4667,7 @@ public class ModBlocks {
         deco_pipe_rim_red = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side_red", 1).setUnlocalizedName("deco_pipe_rim_red").setRegistryName("hbm", "deco_pipe_rim_red").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
         deco_pipe_rim_rusted = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side_rusty", 1).setUnlocalizedName("deco_pipe_rim_rusted").setRegistryName("hbm", "deco_pipe_rim_rusted").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
         deco_pipe_rusted = new BlockPipe(Material.IRON, ModSoundTypes.grate, "hbm:pipe_side_rusty", 0).setUnlocalizedName("deco_pipe_rusted").setRegistryName("hbm", "deco_pipe_rusted").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(5.0F);
-        deco_toaster = new Block(Material.IRON).setUnlocalizedName("deco_toaster").setRegistryName("hbm", "deco_toaster").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_toaster = new BlockDecoToaster(Material.IRON).setUnlocalizedName("deco_toaster").setRegistryName("hbm", "deco_toaster").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         dirt_dead = new Block(Material.GROUND).setUnlocalizedName("dirt_dead").setRegistryName("hbm", "dirt_dead").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         dirt_oily = new Block(Material.GROUND).setUnlocalizedName("dirt_oily").setRegistryName("hbm", "dirt_oily").setCreativeTab(MainRegistry.blockTab).setHardness(0.5F);
         dres_rock = new BlockGeneric(Material.ROCK).setUnlocalizedName("dres_rock").setRegistryName("hbm", "dres_rock").setCreativeTab(MainRegistry.blockTab).setHardness(1.5F).setResistance(10.0F);

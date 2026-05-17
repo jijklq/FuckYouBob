@@ -1,7 +1,34 @@
 {
   "variants": {
-    "normal": {
+    "variant=0,facing=north": {
       "model": "hbm:deco_computer"
+    },
+    "variant=0,facing=south": {
+      "model": "hbm:deco_computer",
+      "y": 180
+    },
+    "variant=0,facing=west": {
+      "model": "hbm:deco_computer",
+      "y": 270
+    },
+    "variant=0,facing=east": {
+      "model": "hbm:deco_computer",
+      "y": 90
+    },
+    "variant=1,facing=north": {
+      "model": "hbm:deco_computer"
+    },
+    "variant=1,facing=south": {
+      "model": "hbm:deco_computer",
+      "y": 180
+    },
+    "variant=1,facing=west": {
+      "model": "hbm:deco_computer",
+      "y": 270
+    },
+    "variant=1,facing=east": {
+      "model": "hbm:deco_computer",
+      "y": 90
     }
   }
 }

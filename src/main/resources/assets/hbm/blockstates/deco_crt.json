@@ -1,7 +1,64 @@
 {
   "variants": {
-    "normal": {
+    "variant=0,facing=north": {
       "model": "hbm:deco_crt"
+    },
+    "variant=0,facing=south": {
+      "model": "hbm:deco_crt",
+      "y": 180
+    },
+    "variant=0,facing=west": {
+      "model": "hbm:deco_crt",
+      "y": 270
+    },
+    "variant=0,facing=east": {
+      "model": "hbm:deco_crt",
+      "y": 90
+    },
+    "variant=1,facing=north": {
+      "model": "hbm:deco_crt"
+    },
+    "variant=1,facing=south": {
+      "model": "hbm:deco_crt",
+      "y": 180
+    },
+    "variant=1,facing=west": {
+      "model": "hbm:deco_crt",
+      "y": 270
+    },
+    "variant=1,facing=east": {
+      "model": "hbm:deco_crt",
+      "y": 90
+    },
+    "variant=2,facing=north": {
+      "model": "hbm:deco_crt"
+    },
+    "variant=2,facing=south": {
+      "model": "hbm:deco_crt",
+      "y": 180
+    },
+    "variant=2,facing=west": {
+      "model": "hbm:deco_crt",
+      "y": 270
+    },
+    "variant=2,facing=east": {
+      "model": "hbm:deco_crt",
+      "y": 90
+    },
+    "variant=3,facing=north": {
+      "model": "hbm:deco_crt"
+    },
+    "variant=3,facing=south": {
+      "model": "hbm:deco_crt",
+      "y": 180
+    },
+    "variant=3,facing=west": {
+      "model": "hbm:deco_crt",
+      "y": 270
+    },
+    "variant=3,facing=east": {
+      "model": "hbm:deco_crt",
+      "y": 90
     }
   }
 }
