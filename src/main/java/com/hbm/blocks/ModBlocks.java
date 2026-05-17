@@ -1,6 +1,7 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import com.hbm.blocks.bomb.BlockTaint;
 import net.minecraft.block.SoundType;
 import com.hbm.blocks.generic.WasteEarth;
 import com.hbm.blocks.generic.BlockStepEffect;
@@ -4519,7 +4520,7 @@ public class ModBlocks {
         crystal_virus = new Block(Material.IRON).setUnlocalizedName("crystal_virus").setRegistryName("hbm", "crystal_virus").setCreativeTab(null).setHardness(15.0F).setResistance(6000000.0F);
         crystal_hardened = new BlockGeneric(Material.IRON).setUnlocalizedName("crystal_hardened").setRegistryName("hbm", "crystal_hardened").setCreativeTab(null).setHardness(15.0F).setResistance(6000000.0F);
         crystal_pulsar = new Block(Material.IRON).setUnlocalizedName("crystal_pulsar").setRegistryName("hbm", "crystal_pulsar").setCreativeTab(null).setHardness(15.0F).setResistance(6000000.0F);
-        taint = new Block(Material.IRON).setUnlocalizedName("taint").setRegistryName("hbm", "taint").setCreativeTab(null).setHardness(15.0F).setResistance(10.0F);
+        taint = new BlockTaint(Material.IRON).setUnlocalizedName("taint").setRegistryName("hbm", "taint").setCreativeTab(null).setHardness(15.0F).setResistance(10.0F);
         vent_chlorine = new Block(Material.IRON).setUnlocalizedName("vent_chlorine").setRegistryName("hbm", "vent_chlorine").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         vent_cloud = new Block(Material.IRON).setUnlocalizedName("vent_cloud").setRegistryName("hbm", "vent_cloud").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
         vent_pink_cloud = new Block(Material.IRON).setUnlocalizedName("vent_pink_cloud").setRegistryName("hbm", "vent_pink_cloud").setCreativeTab(MainRegistry.machineTab).setHardness(5.0F).setResistance(10.0F);
