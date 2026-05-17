@@ -2413,7 +2413,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(ore_nether_schrabidium).setRegistryName(ore_nether_schrabidium.getRegistryName()));
 
         // Meteor
-        event.getRegistry().register(new ItemBlock(ore_meteor).setRegistryName(ore_meteor.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(ore_meteor).setRegistryName(ore_meteor.getRegistryName()));
 
         // Gneiss
         event.getRegistry().register(new ItemBlock(stone_gneiss).setRegistryName(stone_gneiss.getRegistryName()));
@@ -2461,7 +2461,7 @@ public class ModBlocks {
 
         // Basalt
         event.getRegistry().register(new ItemBlock(basalt).setRegistryName(basalt.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(ore_basalt).setRegistryName(ore_basalt.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(ore_basalt).setRegistryName(ore_basalt.getRegistryName()));
         event.getRegistry().register(new ItemBlock(basalt_smooth).setRegistryName(basalt_smooth.getRegistryName()));
         event.getRegistry().register(new ItemBlock(basalt_brick).setRegistryName(basalt_brick.getRegistryName()));
         event.getRegistry().register(new ItemBlock(basalt_polished).setRegistryName(basalt_polished.getRegistryName()));

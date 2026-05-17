@@ -1,7 +1,9 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:ore_meteor"
-    }
+    "variant=0": { "model": "hbm:ore_meteor" },
+    "variant=1": { "model": "hbm:ore_meteor" },
+    "variant=2": { "model": "hbm:ore_meteor" },
+    "variant=3": { "model": "hbm:ore_meteor" },
+    "variant=4": { "model": "hbm:ore_meteor" }
   }
 }

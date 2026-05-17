@@ -1,7 +1,9 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:ore_basalt"
-    }
+    "variant=0": { "model": "hbm:ore_basalt" },
+    "variant=1": { "model": "hbm:ore_basalt" },
+    "variant=2": { "model": "hbm:ore_basalt" },
+    "variant=3": { "model": "hbm:ore_basalt" },
+    "variant=4": { "model": "hbm:ore_basalt" }
   }
 }
