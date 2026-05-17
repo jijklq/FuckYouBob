@@ -3441,7 +3441,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(ore_sellafield_uranium_scorched).setRegistryName(ore_sellafield_uranium_scorched.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ore_tektite_osmiridium).setRegistryName(ore_tektite_osmiridium.getRegistryName()));
         event.getRegistry().register(new ItemBlock(pink_barrel).setRegistryName(pink_barrel.getRegistryName()));
-        event.getRegistry().register(new ItemBlockEnumMulti(plant_dead).setRegistryName(plant_dead.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(plant_dead).setRegistryName(plant_dead.getRegistryName()));
         event.getRegistry().register(new ItemBlockEnumMulti(plant_flower).setRegistryName(plant_flower.getRegistryName()));
         event.getRegistry().register(new ItemBlockEnumMulti(plant_tall).setRegistryName(plant_tall.getRegistryName()));
         event.getRegistry().register(new ItemBlock(plant_tall_laythe).setRegistryName(plant_tall_laythe.getRegistryName()));
