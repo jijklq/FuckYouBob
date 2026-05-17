@@ -1,7 +1,16 @@
 {
   "variants": {
-    "normal": {
+    "axis=x": {
+      "model": "hbm:deco_pipe_green",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "hbm:deco_pipe_green"
+    },
+    "axis=z": {
+      "model": "hbm:deco_pipe_green",
+      "x": 90
     }
   }
 }
