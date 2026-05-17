@@ -1,6 +1,7 @@
 package com.hbm.blocks;
 
 import com.hbm.blocks.BlockEnums.LightstoneType;
+import com.hbm.blocks.generic.BlockDecoCT;
 import com.hbm.blocks.bomb.BlockTaint;
 import net.minecraft.block.SoundType;
 import com.hbm.blocks.generic.WasteEarth;
@@ -3744,16 +3745,16 @@ public class ModBlocks {
         block_osmiridium = new BlockBeaconable(Material.IRON).setUnlocalizedName("block_osmiridium").setRegistryName("hbm", "block_osmiridium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
 
         // Decorative metal blocks
-        deco_titanium = new Block(Material.IRON).setUnlocalizedName("deco_titanium").setRegistryName("hbm", "deco_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_red_copper = new Block(Material.IRON).setUnlocalizedName("deco_red_copper").setRegistryName("hbm", "deco_red_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_tungsten = new Block(Material.IRON).setUnlocalizedName("deco_tungsten").setRegistryName("hbm", "deco_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_aluminium = new Block(Material.IRON).setUnlocalizedName("deco_aluminium").setRegistryName("hbm", "deco_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_steel = new Block(Material.IRON).setUnlocalizedName("deco_steel").setRegistryName("hbm", "deco_steel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_rusty_steel = new Block(Material.IRON).setUnlocalizedName("deco_rusty_steel").setRegistryName("hbm", "deco_rusty_steel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_lead = new Block(Material.IRON).setUnlocalizedName("deco_lead").setRegistryName("hbm", "deco_lead").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_beryllium = new Block(Material.IRON).setUnlocalizedName("deco_beryllium").setRegistryName("hbm", "deco_beryllium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_titanium = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_titanium").setRegistryName("hbm", "deco_titanium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_red_copper = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_red_copper").setRegistryName("hbm", "deco_red_copper").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_tungsten = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_tungsten").setRegistryName("hbm", "deco_tungsten").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_aluminium = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_aluminium").setRegistryName("hbm", "deco_aluminium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_steel = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_steel").setRegistryName("hbm", "deco_steel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_rusty_steel = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_rusty_steel").setRegistryName("hbm", "deco_rusty_steel").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_lead = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_lead").setRegistryName("hbm", "deco_lead").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_beryllium = new BlockDecoCT(Material.IRON).noFortune().setUnlocalizedName("deco_beryllium").setRegistryName("hbm", "deco_beryllium").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         deco_asbestos = new BlockOutgas(Material.CLOTH, true, 5, true).setUnlocalizedName("deco_asbestos").setRegistryName("hbm", "deco_asbestos").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
-        deco_stainless = new Block(Material.IRON).setUnlocalizedName("deco_stainless").setRegistryName("hbm", "deco_stainless").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
+        deco_stainless = new BlockDecoCT(Material.IRON).setUnlocalizedName("deco_stainless").setRegistryName("hbm", "deco_stainless").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(10.0F);
         deco_rbmk = new BlockGeneric(Material.IRON).setUnlocalizedName("deco_rbmk").setRegistryName("hbm", "deco_rbmk").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(100.0F);
         deco_rbmk_smooth = new BlockGeneric(Material.IRON).setUnlocalizedName("deco_rbmk_smooth").setRegistryName("hbm", "deco_rbmk_smooth").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(100.0F);
         deco_emitter = new Block(Material.IRON).setUnlocalizedName("deco_emitter").setRegistryName("hbm", "deco_emitter").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(20.0F);
