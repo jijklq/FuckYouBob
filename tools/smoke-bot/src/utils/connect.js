@@ -5,10 +5,11 @@ const forge = require('minecraft-protocol-forge');
 // B.1 confirmed: forgeHandshake with explicit modlist works; autoVersionForge does NOT
 // (server kicks with modlist-drift when we declare empty list)
 const DEFAULT_FORGE_MODS = [
-  { modid: 'mcp',   version: '9.42' },
-  { modid: 'FML',   version: '8.0.99.99' },
-  { modid: 'Forge', version: '14.23.5.2860' },
-  { modid: 'hbm',   version: '1.0.0' },
+  { modid: 'mcp',     version: '9.42' },
+  { modid: 'FML',     version: '8.0.99.99' },
+  { modid: 'Forge',   version: '14.23.5.2860' },
+  { modid: 'hbm',     version: '1.0.0' },
+  { modid: 'ntmtest', version: '1.0.0' },
 ];
 
 function createBot(options = {}) {

@@ -10,4 +10,5 @@ module.exports = {
   wait:            require('./wait'),
   verifyBlock:     require('./verifyBlock'),
   verifyInventory: require('./verifyInventory'),
+  verifyNtmBlock:  require('./verifyNtmBlock'),
 };

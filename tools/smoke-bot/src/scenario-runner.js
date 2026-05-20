@@ -40,6 +40,7 @@ async function runScenario(scenarioPath) {
     console.error(`[runner] bot error: ${err.message}`);
   });
 
+
   const result = { passed: 0, failed: 0, failures: [] };
 
   try {
