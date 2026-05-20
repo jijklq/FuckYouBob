@@ -5,7 +5,7 @@
  *
  * Запуск: ./deploy.sh --no-build --no-restart smoke_current
  *
- * Текущее покрытие: этапы 3.x–4.4c (18 классов)
+ * Текущее покрытие: этапы 3.x–4.4e (20 классов)
  *
  * ПРАВИЛО: после каждого нового Java-класса блока — добавить сюда 1 блок.
  * Делать в той же сессии что и сам порт.
@@ -106,16 +106,22 @@ const steps = [].concat(
     props: { facing: 'north', variant: 0 },
     aabb:  [0.125, 0, 0.375, 0.875, 0.875, 1.0],
   }),
+
+  // ─── Lamp family ─────────────────────────────────────────────
+  // ReinforcedLamp: redstone on/off pair, cube_all, off variant
+  blockEntry(119, 'hbm:reinforced_lamp_off', 0),
+  // TritiumLamp: redstone on/off + ISpotlight, off variant (green)
+  blockEntry(120, 'hbm:lamp_tritium_green_off', 0),
 );
 
 module.exports = {
-  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4c)',
+  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4e)',
   arena:      { x: ARENA_X, y: ARENA_Y, z: ARENA_Z },
   setup:      [
     '/gamemode 1 @s',
     `/fill ${ARENA_X - 5} ${ARENA_Y - 1} ${ARENA_Z - 5} ${ARENA_X + 5} ${ARENA_Y - 1} ${ARENA_Z + 25} minecraft:stone`,
   ],
-  cleanup:    '/ntmtest cleanup 94 63 99 106 72 120',
+  cleanup:    '/ntmtest cleanup 94 63 99 106 72 122',
   stopOnFail: false,
   steps,
 };

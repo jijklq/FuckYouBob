@@ -5,6 +5,8 @@ import com.hbm.blocks.BlockEnums;
 import com.hbm.blocks.generic.BlockDecoModel;
 import com.hbm.blocks.generic.BlockDecoToaster;
 import com.hbm.blocks.generic.BlockDecoCRT;
+import com.hbm.blocks.generic.ReinforcedLamp;
+import com.hbm.blocks.generic.TritiumLamp;
 import com.hbm.blocks.ModSoundTypes;
 import com.hbm.blocks.generic.BlockPipe;
 import com.hbm.blocks.generic.BlockDecoCT;
@@ -3789,17 +3791,17 @@ public class ModBlocks {
         reinforced_glass_pane = new Block(Material.ROCK).setUnlocalizedName("reinforced_glass_pane").setRegistryName("hbm", "reinforced_glass_pane").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(25.0F);
         reinforced_light = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_light").setRegistryName("hbm", "reinforced_light").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(15.0F).setResistance(80.0F);
         reinforced_sand = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_sand").setRegistryName("hbm", "reinforced_sand").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(40.0F);
-        reinforced_lamp_off = new Block(Material.ROCK).setUnlocalizedName("reinforced_lamp_off").setRegistryName("hbm", "reinforced_lamp_off").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(80.0F);
-        reinforced_lamp_on = new Block(Material.ROCK).setUnlocalizedName("reinforced_lamp_on").setRegistryName("hbm", "reinforced_lamp_on").setLightLevel(1.0F).setHardness(15.0F).setResistance(80.0F);
+        reinforced_lamp_off = new ReinforcedLamp(Material.ROCK, false).setUnlocalizedName("reinforced_lamp_off").setRegistryName("hbm", "reinforced_lamp_off").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(80.0F);
+        reinforced_lamp_on = new ReinforcedLamp(Material.ROCK, true).setUnlocalizedName("reinforced_lamp_on").setRegistryName("hbm", "reinforced_lamp_on").setHardness(15.0F).setResistance(80.0F);
         reinforced_laminate = new Block(Material.ROCK).setUnlocalizedName("reinforced_laminate").setRegistryName("hbm", "reinforced_laminate").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(300.0F);
         reinforced_laminate_pane = new Block(Material.ROCK).setUnlocalizedName("reinforced_laminate_pane").setRegistryName("hbm", "reinforced_laminate_pane").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(300.0F);
         reinforced_stone = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_stone").setRegistryName("hbm", "reinforced_stone").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(100.0F);
 
         // Lamps and lights
-        lamp_tritium_green_off = new Block(Material.REDSTONE_LIGHT).setUnlocalizedName("lamp_tritium_green_off").setRegistryName("hbm", "lamp_tritium_green_off").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        lamp_tritium_green_on = new Block(Material.REDSTONE_LIGHT).setUnlocalizedName("lamp_tritium_green_on").setRegistryName("hbm", "lamp_tritium_green_on").setLightLevel(1.0F).setHardness(3.0F).setResistance(5.0F);
-        lamp_tritium_blue_off = new Block(Material.REDSTONE_LIGHT).setUnlocalizedName("lamp_tritium_blue_off").setRegistryName("hbm", "lamp_tritium_blue_off").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
-        lamp_tritium_blue_on = new Block(Material.REDSTONE_LIGHT).setUnlocalizedName("lamp_tritium_blue_on").setRegistryName("hbm", "lamp_tritium_blue_on").setLightLevel(1.0F).setHardness(3.0F).setResistance(5.0F);
+        lamp_tritium_green_off = new TritiumLamp(Material.REDSTONE_LIGHT, false).setUnlocalizedName("lamp_tritium_green_off").setRegistryName("hbm", "lamp_tritium_green_off").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        lamp_tritium_green_on = new TritiumLamp(Material.REDSTONE_LIGHT, true).setUnlocalizedName("lamp_tritium_green_on").setRegistryName("hbm", "lamp_tritium_green_on").setHardness(3.0F).setResistance(5.0F);
+        lamp_tritium_blue_off = new TritiumLamp(Material.REDSTONE_LIGHT, false).setUnlocalizedName("lamp_tritium_blue_off").setRegistryName("hbm", "lamp_tritium_blue_off").setCreativeTab(MainRegistry.blockTab).setHardness(3.0F).setResistance(5.0F);
+        lamp_tritium_blue_on = new TritiumLamp(Material.REDSTONE_LIGHT, true).setUnlocalizedName("lamp_tritium_blue_on").setRegistryName("hbm", "lamp_tritium_blue_on").setHardness(3.0F).setResistance(5.0F);
         lamp_demon = new Block(Material.IRON).setUnlocalizedName("lamp_demon").setRegistryName("hbm", "lamp_demon").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(3.0F).setResistance(5.0F);
         lantern = new Block(Material.IRON).setUnlocalizedName("lantern").setRegistryName("hbm", "lantern").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(3.0F).setResistance(5.0F);
         lantern_behemoth = new Block(Material.IRON).setUnlocalizedName("lantern_behemoth").setRegistryName("hbm", "lantern_behemoth").setHardness(3.0F).setResistance(5.0F);
