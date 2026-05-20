@@ -1,0 +1,16 @@
+{
+  "name": "ntm-smoke-bot",
+  "version": "0.2.0",
+  "description": "Headless mineflayer bot for automated NTM smoke testing",
+  "private": true,
+  "main": "src/bot.js",
+  "scripts": {
+    "hello":    "node src/bot.js",
+    "scenario": "node src/scenario-runner.js"
+  },
+  "dependencies": {
+    "minecraft-protocol-forge": "^1.0.0",
+    "mineflayer": "^4.20.0",
+    "vec3": "^0.1.10"
+  }
+}
