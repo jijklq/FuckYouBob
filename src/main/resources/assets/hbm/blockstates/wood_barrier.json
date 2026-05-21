@@ -1,7 +1,10 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:wood_barrier"
-    }
+    "meta=0": { "model": "hbm:wood_barrier" },
+    "meta=1": { "model": "hbm:wood_barrier" },
+    "meta=2": { "model": "hbm:wood_barrier" },
+    "meta=3": { "model": "hbm:wood_barrier" },
+    "meta=4": { "model": "hbm:wood_barrier" },
+    "meta=5": { "model": "hbm:wood_barrier" }
   }
 }

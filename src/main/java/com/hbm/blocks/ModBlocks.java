@@ -13,6 +13,9 @@ import com.hbm.blocks.generic.BlockDecoCT;
 import com.hbm.blocks.bomb.BlockTaint;
 import net.minecraft.block.SoundType;
 import com.hbm.blocks.generic.WasteEarth;
+import com.hbm.blocks.generic.BlockSpeedy;
+import com.hbm.blocks.generic.BlockSandbags;
+import com.hbm.blocks.generic.BlockBarrier;
 import com.hbm.blocks.generic.BlockStepEffect;
 import com.hbm.blocks.generic.WasteLeaves;
 import com.hbm.blocks.generic.WasteLog;
@@ -3778,10 +3781,10 @@ public class ModBlocks {
         // Misc surface blocks
         gravel_obsidian = new BlockFalling(Material.IRON).setUnlocalizedName("gravel_obsidian").setRegistryName("hbm", "gravel_obsidian").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(240.0F);
         gravel_diamond = new BlockFalling(Material.SAND).setUnlocalizedName("gravel_diamond").setRegistryName("hbm", "gravel_diamond").setCreativeTab(MainRegistry.blockTab).setHardness(0.6F).setResistance(1.0F);
-        asphalt = new Block(Material.ROCK).setUnlocalizedName("asphalt").setRegistryName("hbm", "asphalt").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(120.0F);
-        asphalt_light = new Block(Material.ROCK).setUnlocalizedName("asphalt_light").setRegistryName("hbm", "asphalt_light").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(15.0F).setResistance(120.0F);
-        sandbags = new Block(Material.GROUND).setUnlocalizedName("sandbags").setRegistryName("hbm", "sandbags").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(30.0F);
-        wood_barrier = new Block(Material.WOOD).setUnlocalizedName("wood_barrier").setRegistryName("hbm", "wood_barrier").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        asphalt = new BlockSpeedy(Material.ROCK, 1.5D).setUnlocalizedName("asphalt").setRegistryName("hbm", "asphalt").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(120.0F);
+        asphalt_light = new BlockSpeedy(Material.ROCK, 1.5D).setUnlocalizedName("asphalt_light").setRegistryName("hbm", "asphalt_light").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(15.0F).setResistance(120.0F);
+        sandbags = new BlockSandbags(Material.GROUND).setUnlocalizedName("sandbags").setRegistryName("hbm", "sandbags").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(30.0F);
+        wood_barrier = new BlockBarrier(Material.WOOD).setUnlocalizedName("wood_barrier").setRegistryName("hbm", "wood_barrier").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
         wood_structure = new Block(Material.WOOD).setUnlocalizedName("wood_structure").setRegistryName("hbm", "wood_structure").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
 
         // Reinforced blocks
