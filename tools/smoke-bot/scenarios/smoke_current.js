@@ -5,7 +5,7 @@
  *
  * Запуск: ./deploy.sh --no-build --no-restart smoke_current
  *
- * Текущее покрытие: этапы 3.x–4.4f (23 классов)
+ * Текущее покрытие: этапы 3.x–4.4g (24 классов)
  *
  * ПРАВИЛО: после каждого нового Java-класса блока — добавить сюда 1 блок.
  * Делать в той же сессии что и сам порт.
@@ -120,16 +120,21 @@ const steps = [].concat(
   blockEntry(122, 'hbm:sandbags', 0),
   // BlockBarrier: facing meta PropertyInteger 0..5; place with meta=2 (NEG_Z/NORTH wall)
   blockEntry(123, 'hbm:wood_barrier', 2),
+
+  // ─── Surface/structure family (4.4g) ────────────────────────
+  // BlockWoodStructure: SCAFFOLD variant (meta=1); inset AABB, isSideSolid(UP)=true
+  // Note: ladder climb non-functional (HbmPlayerProps stub — no Capability storage)
+  blockEntry(124, 'hbm:wood_structure', 1),
 );
 
 module.exports = {
-  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4f)',
+  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4g)',
   arena:      { x: ARENA_X, y: ARENA_Y, z: ARENA_Z },
   setup:      [
     '/gamemode 1 @s',
     `/fill ${ARENA_X - 5} ${ARENA_Y - 1} ${ARENA_Z - 5} ${ARENA_X + 5} ${ARENA_Y - 1} ${ARENA_Z + 25} minecraft:stone`,
   ],
-  cleanup:    '/ntmtest cleanup 94 63 99 106 72 124',
+  cleanup:    '/ntmtest cleanup 94 63 99 106 72 125',
   stopOnFail: false,
   steps,
 };

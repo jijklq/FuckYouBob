@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "hbm:wood_structure"
-    }
+    "variant=0": { "model": "hbm:wood_structure" },
+    "variant=1": { "model": "hbm:wood_structure" },
+    "variant=2": { "model": "hbm:wood_structure" }
   }
 }

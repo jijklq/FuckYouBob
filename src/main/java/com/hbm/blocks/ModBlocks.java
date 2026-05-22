@@ -16,6 +16,7 @@ import com.hbm.blocks.generic.WasteEarth;
 import com.hbm.blocks.generic.BlockSpeedy;
 import com.hbm.blocks.generic.BlockSandbags;
 import com.hbm.blocks.generic.BlockBarrier;
+import com.hbm.blocks.generic.BlockWoodStructure;
 import com.hbm.blocks.generic.BlockStepEffect;
 import com.hbm.blocks.generic.WasteLeaves;
 import com.hbm.blocks.generic.WasteLog;
@@ -2623,7 +2624,7 @@ public class ModBlocks {
         event.getRegistry().register(new ItemBlock(ore_tekto).setRegistryName(ore_tekto.getRegistryName()));
 
         // Building blocks
-        event.getRegistry().register(new ItemBlock(wood_structure).setRegistryName(wood_structure.getRegistryName()));
+        event.getRegistry().register(new ItemBlockEnumMulti(wood_structure).setRegistryName(wood_structure.getRegistryName()));
         event.getRegistry().register(new ItemBlock(reinforced_brick).setRegistryName(reinforced_brick.getRegistryName()));
         event.getRegistry().register(new ItemBlock(reinforced_ducrete).setRegistryName(reinforced_ducrete.getRegistryName()));
         event.getRegistry().register(new ItemBlock(reinforced_glass).setRegistryName(reinforced_glass.getRegistryName()));
@@ -3785,7 +3786,7 @@ public class ModBlocks {
         asphalt_light = new BlockSpeedy(Material.ROCK, 1.5D).setUnlocalizedName("asphalt_light").setRegistryName("hbm", "asphalt_light").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(15.0F).setResistance(120.0F);
         sandbags = new BlockSandbags(Material.GROUND).setUnlocalizedName("sandbags").setRegistryName("hbm", "sandbags").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(30.0F);
         wood_barrier = new BlockBarrier(Material.WOOD).setUnlocalizedName("wood_barrier").setRegistryName("hbm", "wood_barrier").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
-        wood_structure = new Block(Material.WOOD).setUnlocalizedName("wood_structure").setRegistryName("hbm", "wood_structure").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
+        wood_structure = new BlockWoodStructure(Material.WOOD).setUnlocalizedName("wood_structure").setRegistryName("hbm", "wood_structure").setCreativeTab(MainRegistry.blockTab).setHardness(5.0F).setResistance(15.0F);
 
         // Reinforced blocks
         reinforced_brick = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_brick").setRegistryName("hbm", "reinforced_brick").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(300.0F);
