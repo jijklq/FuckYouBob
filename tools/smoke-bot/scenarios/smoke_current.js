@@ -5,7 +5,7 @@
  *
  * Запуск: ./deploy.sh --no-build --no-restart smoke_current
  *
- * Текущее покрытие: этапы 3.x–4.4g (24 классов)
+ * Текущее покрытие: этапы 3.x–4.4h (25 классов)
  *
  * ПРАВИЛО: после каждого нового Java-класса блока — добавить сюда 1 блок.
  * Делать в той же сессии что и сам порт.
@@ -125,10 +125,14 @@ const steps = [].concat(
   // BlockWoodStructure: SCAFFOLD variant (meta=1); inset AABB, isSideSolid(UP)=true
   // Note: ladder climb non-functional (HbmPlayerProps stub — no Capability storage)
   blockEntry(124, 'hbm:wood_structure', 1),
+
+  // ─── Glass family (4.4h) ────────────────────────────────────
+  // BlockNTMGlassCT: thin wrapper над BlockNTMGlass parent; CT-shader render → render-deferred
+  blockEntry(125, 'hbm:reinforced_glass', 0),
 );
 
 module.exports = {
-  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4g)',
+  name:       'smoke_current — регрессия портированных классов блоков (3.x–4.4h)',
   arena:      { x: ARENA_X, y: ARENA_Y, z: ARENA_Z },
   setup:      [
     '/gamemode 1 @s',

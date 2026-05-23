@@ -17,6 +17,8 @@ import com.hbm.blocks.generic.BlockSpeedy;
 import com.hbm.blocks.generic.BlockSandbags;
 import com.hbm.blocks.generic.BlockBarrier;
 import com.hbm.blocks.generic.BlockWoodStructure;
+import com.hbm.blocks.generic.BlockNTMGlassCT;
+import com.hbm.blocks.generic.BlockNTMGlassPane;
 import com.hbm.blocks.generic.BlockStepEffect;
 import com.hbm.blocks.generic.WasteLeaves;
 import com.hbm.blocks.generic.WasteLog;
@@ -3791,8 +3793,8 @@ public class ModBlocks {
         // Reinforced blocks
         reinforced_brick = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_brick").setRegistryName("hbm", "reinforced_brick").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(300.0F);
         reinforced_ducrete = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_ducrete").setRegistryName("hbm", "reinforced_ducrete").setCreativeTab(MainRegistry.blockTab).setHardness(20.0F).setResistance(1000.0F);
-        reinforced_glass = new Block(Material.ROCK).setUnlocalizedName("reinforced_glass").setRegistryName("hbm", "reinforced_glass").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(25.0F);
-        reinforced_glass_pane = new Block(Material.ROCK).setUnlocalizedName("reinforced_glass_pane").setRegistryName("hbm", "reinforced_glass_pane").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(25.0F);
+        reinforced_glass = new BlockNTMGlassCT(0, Material.ROCK).setUnlocalizedName("reinforced_glass").setRegistryName("hbm", "reinforced_glass").setCreativeTab(MainRegistry.blockTab).setLightOpacity(0).setHardness(2.0F).setResistance(25.0F);
+        reinforced_glass_pane = new BlockNTMGlassPane(0, "hbm:reinforced_glass_pane", "hbm:reinforced_glass_pane_edge", Material.ROCK, false).setUnlocalizedName("reinforced_glass_pane").setRegistryName("hbm", "reinforced_glass_pane").setCreativeTab(MainRegistry.blockTab).setHardness(2.0F).setResistance(25.0F);
         reinforced_light = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_light").setRegistryName("hbm", "reinforced_light").setCreativeTab(MainRegistry.blockTab).setLightLevel(1.0F).setHardness(15.0F).setResistance(80.0F);
         reinforced_sand = new BlockGeneric(Material.ROCK).setUnlocalizedName("reinforced_sand").setRegistryName("hbm", "reinforced_sand").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(40.0F);
         reinforced_lamp_off = new ReinforcedLamp(Material.ROCK, false).setUnlocalizedName("reinforced_lamp_off").setRegistryName("hbm", "reinforced_lamp_off").setCreativeTab(MainRegistry.blockTab).setHardness(15.0F).setResistance(80.0F);
